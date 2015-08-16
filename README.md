@@ -28,9 +28,9 @@ This also meets the requirements of the project:
 * **Instagram API search for geotags**
  ![diagram] (http://i.imgur.com/0MoluqC.jpg)
 
-* **[NodeJS driver for the instagram API] (http://www.ibm.com/developerworks/xml/library/xinstagram1/index.html#retrievedetails)**
-
 **Some NPM Documentation, Github repos, and Instagram Developer documentation:**
+
+* **[NodeJS driver for the instagram API] (http://www.ibm.com/developerworks/xml/library/xinstagram1/index.html#retrievedetails)**
 
 * **[NodeJS Driver for Instagram API] (https://github.com/totemstech/instagram-node)**
 
