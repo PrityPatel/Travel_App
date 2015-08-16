@@ -25,9 +25,9 @@ If I’m not mistaken, this also meets the requirements of the project:
 
 Also, here’s a brief snippet for the Instagram stuff with some links….
 
-[NodeJS driver for the instagram API] (http://www.ibm.com/developerworks/xml/library/xinstagram1/index.html#retrievedetails)
+* **[NodeJS driver for the instagram API] (http://www.ibm.com/developerworks/xml/library/xinstagram1/index.html#retrievedetails)**
 
-and here is some NPM Documentation, Github repos, and Instagram Developer documentation:
+Some NPM Documentation, Github repos, and Instagram Developer documentation:
 
 * **[NodeJS Driver for Instagram API] (https://github.com/totemstech/instagram-node)**
 
@@ -35,7 +35,7 @@ and here is some NPM Documentation, Github repos, and Instagram Developer docume
 
 * **[Instagram Limits] (https://instagram.com/developer/limits/)**
 
-* **[Instagram Endpoints] (https://instagram.com/developer/endpoints/?hl=en)
+* **[Instagram Endpoints] (https://instagram.com/developer/endpoints/?hl=en)**
 
 * **[Get Data Using Instagram API] (http://www.c-sharpcorner.com/UploadFile/raj1979/how-to-authenticate-and-get-data-using-instagram-API/)**
 
@@ -54,7 +54,7 @@ Another link that is utilizing a streaming feed… this one is using twitter, th
 ### Landing Page Concept
 
 A basic landing page mocked up by Kevin:
-  https://googledrive.com/host/0B6z5p82sidMKeU5HRWtldDVVSEU
+* **[Landing Page Mock-up, v1] (https://googledrive.com/host/0B6z5p82sidMKeU5HRWtldDVVSEU)**
 
 ---
 
