@@ -1,4 +1,4 @@
-#Project 3 Code Style Guide
+#Project 3 Group Project: Code Style Guide
 ***************
 
 These style guidelines follow <a href="https://github.com/google/styleguide">Google's style guides for Javascript, HTML, and CSS</a>.  They're just a starting point to make sure we're writing consistently styled code and to make Prity's job a little easier, so feel free to add to or modify this!
