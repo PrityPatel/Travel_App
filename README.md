@@ -25,7 +25,8 @@ This also meets the requirements of the project:
 
 Also, here’s a brief snippet for the Instagram stuff with some links…
 
-* **[Instagram API search for geotags] (http://i.imgur.com/0MoluqC.jpg)**
+**Instagram API search for geotags**
+* ![diagram] (http://i.imgur.com/0MoluqC.jpg)
 
 * **[NodeJS driver for the instagram API] (http://www.ibm.com/developerworks/xml/library/xinstagram1/index.html#retrievedetails)**
 
