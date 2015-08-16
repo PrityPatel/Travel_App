@@ -1,31 +1,66 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #3: Working as a Team with Express
+# Project #3: Working as a Team with Express
 
-### Overview
+###  Project Concept
 
-You’ve already worked in small groups to accomplish various labs and exercises,
-but this time **we’re going to challenge you to work on a whole project with a
-small team.**
+An idea that could provide for a robust and dynamic site with full crud and with API usage.
 
-Not only will you be asked to **exercise additional creativity** in designing
-your own project, your instructors will partner you with other classmates to
-architect, design, and collaboratively build an application of your own design.
+We utilize the Instagram API that has geotagging available and also the Numbeo API.
 
-While your last project taught you how to get started with Ruby, SQL, & Ruby on
-Rails, this project you'll be building something exciting with
-**Express & Mongo.**
+The experience is …"Experience living in another city…. for a day, for a year….fantasy, reality... now or later…. You decide!” (this is a working concept… we can come up with that later)
 
-**This is meant to push you both technically and collaboratively.** It’s a lot
-harder to work in a team than to work by yourself, but that's most likely what
-you’re going to find yourself doing in your first development job after WDI,
-and **it's important to learn how to work together.**
+User enters their city, country of choice (or browse locations) and when they click to open up a location, they would have to log in, then:
+  - User is taken to a page where Instagram images from that city are displayed/updated in real time (because of the API) and the cost of living is displaying (because of the numbeo API). Users only have to be authenticated with Instagram (OAuth) IF they want to connect, comment, or like (which we can icebox).
 
-Make it work, and make it awesome!
+For this project we can limit the amount of locations (or not depending on complexity), but at least we know it could scale going forward. Main thing is testing out if the API(s) would work.
+
+Using the Instagram images helps take away from having to come up with robust design as images are themselves vibrant, so then the design focus for the app becomes user flow and display options (from what i understand, the Instagram API also allows for thumbnail and zoomed images).
+
+This idea allows for additional API's going forward (if time permits)… like foursquare, yelp, twitter, facebook, etc.
+
+If I’m not mistaken, this also meets the requirements of the project:
+-user model
+-location model
+-and full crud on user model
+-possibly full crud on location model if users can save their location (which i think we should implement as a feature)
+
+Also, here’s a brief snippet for the Instagram stuff with some links….
+
+http://www.ibm.com/developerworks/xml/library/xinstagram1/index.html#retrievedetails
+
+and here is some npm documentation, github repos, and instagram developer documentation:
+
+https://github.com/totemstech/instagram-node
+
+https://www.npmjs.com/package/instagram-node
+
+https://instagram.com/developer/limits/
+
+https://instagram.com/developer/endpoints/?hl=en
+
+http://www.c-sharpcorner.com/UploadFile/raj1979/how-to-authenticate-and-get-data-using-instagram-API/
+
+http://webapplog.com/express-js-tutorial-instagram-gallery-example-app-with-storify-api/
+
+Another link that is utilizing a streaming feed… this one is using twitter, though should help build a roadmap for Instagram (real-time is icebox, but just putting it here, so we can reference):
+
+https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js
+
+https://github.com/mckelvey/instagram-node-lib
+
+https://instagram.com/developer/realtime/?hl=en
+
+---
+
+### Landing Page Concept
+
+A basic landing page mocked up by Kevin:
+  https://googledrive.com/host/0B6z5p82sidMKeU5HRWtldDVVSEU
 
 ---
 
 ### Technical Requirements
 
-Your app must:
+App must:
 
 - **Use Mongo & Express** to build an app with a RESTful interface
 - **Models**:
@@ -117,36 +152,6 @@ It is suggested that:
 
 ---
 
-### Potential Project Ideas
-
-For this project, we want you to work with your team to build a creative product
-that you actually think someone will want to use. We won't have time to do tons
-of customer research, but take some time to brainstorm. If you're struggling for
-ideas, the ones below could help get you started.
-
-##### Bucketli.st
-
-Besides finishing WDI, you surely have one or two things you'd love to do with
-your life. Let's get 'em on paper! You could integrate with a third-party
-location-based API to allow users to search for a location or venue to add to
-their bucket list items.
-
-##### Survey App
-
-Imagine sending out a survey to everyone in the class – what should we eat for
-lunch today? Or 1-5, how well did you understand what we just learned? It would
-be even more awesome if it were real-time, so you could see answers pouring in
-as they're submitted.
-
-##### Hello, Comments
-
-Imagine the benefits of having an API where you could embed comments into any
-website you want. They could even update in realtime if you wanted, so that
-you'd never have to refresh the page. CMS providers across the world could
-quit writing code from scratch and just embed your widget instead.
-
----
-
 ### Useful Resources
 
 * **[Mongoose](http://mongoosejs.com/)**
@@ -178,17 +183,3 @@ quit writing code from scratch and just embed your widget instead.
   implementations? _(Note that this part of your feedback evaluation will take
   place during your one-on-one code review with your instructors, after you've
   completed the project.)_
-
-- __Total__: Your instructors will give you a total score on your project
-  between:
-
-    Score | Expectations
-    ----- | ------------
-    **0** | _Did not complete._
-    **1** | _Does not meet expectations._
-    **2** | _Meets expectactions, good job!_
-    **3** | _Exceeds expectations, you wonderful creature, you!_
-
- This will serve as a helpful overall gauge of whether you met the project
- goals, but __the more important scores are the individual ones__ above, which
- can help you identify where to focus your efforts for the next project!
