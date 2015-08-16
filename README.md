@@ -17,13 +17,15 @@ Using the Instagram images helps take away from having to come up with robust de
 
 This idea allows for additional API's going forward (if time permits)… like foursquare, yelp, twitter, facebook, etc.
 
-If I’m not mistaken, this also meets the requirements of the project:
--user model
--location model
--and full crud on user model
--possibly full crud on location model if users can save their location (which i think we should implement as a feature)
+This also meets the requirements of the project:
+  - User model
+  - Location model
+  - Full CRUD on User model
+  - Possibly full CRUD on Location model if Users can save Locations (I think we should implement)
 
-Also, here’s a brief snippet for the Instagram stuff with some links….
+Also, here’s a brief snippet for the Instagram stuff with some links…
+
+* **[Instagram API search for geotags] (http://i.imgur.com/0MoluqC.jpg)**
 
 * **[NodeJS driver for the instagram API] (http://www.ibm.com/developerworks/xml/library/xinstagram1/index.html#retrievedetails)**
 
