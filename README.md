@@ -23,14 +23,14 @@ This also meets the requirements of the project:
   - Full CRUD on User model
   - Possibly full CRUD on Location model if Users can save Locations (I think we should implement)
 
-Also, here’s a brief snippet for the Instagram stuff with some links…
+**Below is a brief snippet for the Instagram stuff with some links…**
 
-* **[Instagram API search for geotags] (http://i.imgur.com/0MoluqC.jpg)**
+* **Instagram API search for geotags**
  ![diagram] (http://i.imgur.com/0MoluqC.jpg)
 
 * **[NodeJS driver for the instagram API] (http://www.ibm.com/developerworks/xml/library/xinstagram1/index.html#retrievedetails)**
 
-Some NPM Documentation, Github repos, and Instagram Developer documentation:
+**Some NPM Documentation, Github repos, and Instagram Developer documentation:**
 
 * **[NodeJS Driver for Instagram API] (https://github.com/totemstech/instagram-node)**
 
@@ -44,7 +44,7 @@ Some NPM Documentation, Github repos, and Instagram Developer documentation:
 
 * **[Express.js Tutorial: Instagram Gallery Example App with Storify API] (http://webapplog.com/express-js-tutorial-instagram-gallery-example-app-with-storify-api/)**
 
-Another link that is utilizing a streaming feed… this one is using twitter, though should help build a roadmap for Instagram (real-time is icebox, but just putting it here, so we can reference):
+**Another link that is utilizing a streaming feed… this one is using twitter, though should help build a roadmap for Instagram (real-time is icebox, but just putting it here, so we can reference):**
 
 * **[Build A Real-Time Twitter Stream with Node and React.js] (https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js)**
 
