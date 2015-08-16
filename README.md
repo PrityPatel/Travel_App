@@ -25,29 +25,29 @@ If I’m not mistaken, this also meets the requirements of the project:
 
 Also, here’s a brief snippet for the Instagram stuff with some links….
 
-http://www.ibm.com/developerworks/xml/library/xinstagram1/index.html#retrievedetails
+[NodeJS driver for the instagram API] (http://www.ibm.com/developerworks/xml/library/xinstagram1/index.html#retrievedetails)
 
-and here is some npm documentation, github repos, and instagram developer documentation:
+and here is some NPM Documentation, Github repos, and Instagram Developer documentation:
 
-https://github.com/totemstech/instagram-node
+* **[NodeJS Driver for Instagram API] (https://github.com/totemstech/instagram-node)**
 
-https://www.npmjs.com/package/instagram-node
+* **[NPM: Simple Instagram-Node Driver] (https://www.npmjs.com/package/instagram-node)**
 
-https://instagram.com/developer/limits/
+* **[Instagram Limits] (https://instagram.com/developer/limits/)**
 
-https://instagram.com/developer/endpoints/?hl=en
+* **[Instagram Endpoints] (https://instagram.com/developer/endpoints/?hl=en)
 
-http://www.c-sharpcorner.com/UploadFile/raj1979/how-to-authenticate-and-get-data-using-instagram-API/
+* **[Get Data Using Instagram API] (http://www.c-sharpcorner.com/UploadFile/raj1979/how-to-authenticate-and-get-data-using-instagram-API/)**
 
-http://webapplog.com/express-js-tutorial-instagram-gallery-example-app-with-storify-api/
+* **[Express.js Tutorial: Instagram Gallery Example App with Storify API] (http://webapplog.com/express-js-tutorial-instagram-gallery-example-app-with-storify-api/)**
 
 Another link that is utilizing a streaming feed… this one is using twitter, though should help build a roadmap for Instagram (real-time is icebox, but just putting it here, so we can reference):
 
-https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js
+* **[Build A Real-Time Twitter Stream with Node and React.js] (https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js)**
 
-https://github.com/mckelvey/instagram-node-lib
+* **[Instagram Node Library] (https://github.com/mckelvey/instagram-node-lib)**
 
-https://instagram.com/developer/realtime/?hl=en
+* **[Instagram Realtime] (https://instagram.com/developer/realtime/?hl=en)**
 
 ---
 
