@@ -1,8 +1,215 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Bangers', cursive;
+    background-color: black;
+  }
+
+
+
+.rotating-item-wrapper {
+    position: absolute
+    ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.rotating-item {
+    display: none;
+    position: absolute;
+     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
-a {
-  color: #00B7FF;
+.cd-user-modal {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s 0, visibility 0 0.3s;
 }
+
+.cd-user-modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s 0, visibility 0 0;
+}
+
+  a {
+    color: #00B7FF;
+  }
+
+  .siteName{
+    font-size: 70px;
+    text-align: center;
+    color: rgba(255,255,255, 0.8);
+  }
+
+  #drop{
+    background-color: rgba(255,255,255, 0.7);
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    padding: 30px;
+    margin: 0 auto;
+  }
+
+  #navynav{
+    top: -50px;
+    width: 100%;
+    background-color: rgba(255,255,255, 0.7);
+  }
+
+  .pic{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0px;
+    position: absolute;
+  }
+
+
+  #droplist{
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  #button{
+    background-color: rgba(255,255,255, 0.8);
+  }
+
+  footer{
+    color: white;
+
+    text-align: center;
+  }
+
+
+
+/*login/signup*/
+/* Mask for background, by default is not display */
+#mask {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+/* You can customize to your needs  */
+.login-popup {
+    display: none;
+    background: #333;
+    padding: 10px;
+    border: 2px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+    box-shadow: 0px 0px 20px #999;
+    /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #999;
+    /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #999;
+    /* Safari, Chrome */
+  border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    /* Firefox */
+        -webkit-border-radius: 3px;
+    /* Safari, Chrome */;
+}
+
+img.btn_close {
+    Position the close button
+  float: right;
+    margin: -28px -28px 0 0;
+}
+
+fieldset {
+    border: none;
+}
+
+form.signin .textbox label {
+    display: block;
+    padding-bottom: 7px;
+}
+
+form.signin .textbox span {
+    display: block;
+}
+
+form.signin p, form.signin span {
+    color: #999;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+form.signin .textbox input {
+    background: #666666;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #000;
+    border-right: 1px solid #333;
+    border-top: 1px solid #000;
+    color: #fff;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font: 13px Arial, Helvetica, sans-serif;
+    padding: 6px 6px 4px;
+    width: 200px;
+}
+
+form.signin input:-moz-placeholder {
+    color: #bbb;
+    text-shadow: 0 0 2px #000;
+}
+
+form.signin input::-webkit-input-placeholder {
+    color: #bbb;
+    text-shadow: 0 0 2px #000;
+}
+
+.close{
+  position: absolute;
+  right: -30px;
+  /*top: -30px;*/
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.button {
+    background: -moz-linear-gradient(center top, #f3f3f3, #dddddd);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#dddddd));
+    background: -o-linear-gradient(top, #f3f3f3, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f3f3f3', EndColorStr='#dddddd');
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 6px 4px;
+    margin-top: 10px;
+    font: 12px;
+    width: 214px;
+}
+
+.button:hover {
+    background: #ddd;
+}
+
