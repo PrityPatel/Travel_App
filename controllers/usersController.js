@@ -20,7 +20,23 @@ var create = function(req, res) {
   });
 };
 
+var show = function(req, res, next) {
+  User
+    .findById(req.params.id)
+    .then(
+      function(user) {
+        res.render(
+          'users/show',
+          {
+            user:    req.user
+        });
+      }, function(err) {
+        return next(err);
+    });
+};
+
 module.exports = {
   new:    newRoute,
   create: create,
+  show: show
 };
