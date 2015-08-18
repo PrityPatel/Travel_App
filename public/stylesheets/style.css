@@ -33,6 +33,10 @@ body {
   margin: 20px;
 }
 
+#costs{
+    color: white;
+}
+
 #droplist{
     text-align: center;
     margin-top: 100px;
@@ -98,10 +102,20 @@ li{
 .rotating-item {
     display: none;
     position: absolute;
-     width: 100%;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+}
+
+#show_back{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRItcyo2Dpv3si_mB2Y0iinK05NWS_6nfftlpiandXkFReonwoK');
+    left: 0;
+    top: 0;
 }
 
 .siteName{
