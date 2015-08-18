@@ -23,7 +23,7 @@ var create = function(req, res) {
 };
 
 var show = function(req, res, next) {
-  var id = req.params.id;
+  var id = req.user.id;
   User.findById({_id: id}, function(error, user) {
     if(error) res.json({message: 'Could not find User because: ' + error});
         res.render('users/show', {user: user});
