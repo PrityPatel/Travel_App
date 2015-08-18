@@ -216,6 +216,7 @@ td{
   text-align: center;
   margin: 0 auto;
   z-index: -1;
+  float: left;
 }
 
 
@@ -246,7 +247,7 @@ td{
 
 .thumb{
 float: left;
-  margin: 10px;
+  margin: 12px;
   width: 150px;
   height: 150px;
   /*margin: 0 auto;*/
