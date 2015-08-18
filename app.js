@@ -53,6 +53,8 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+require('./api/instagram');
+
 // error handlers
 
 // development error handler
