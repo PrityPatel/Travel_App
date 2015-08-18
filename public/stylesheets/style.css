@@ -1,66 +1,18 @@
-  body {
+a {
+    color: #00B7FF;
+}
+
+body {
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Bangers', cursive;
     background-color: black;
-  }
-
-  h1{
-    text-align: center;
-  }
-.thumbs{
-/*  height: 350px;
-  width: 600px;*/
-  /*background-color: red;*/
-  text-align: center;
-  margin: 0 auto;
 }
 
-#title{
-  color: #900000
-}
-
-
-.thumb{
-  display: inline-block;
-  margin: 10px;
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  text-align: center;
-  /*background-color: red;*/
-  border: 3px solid red;
-  border-radius: 10px;
-}
-li{
-/*  text-align: center;
-  margin: 20px;
-  font-size: 20px;*/
-  text-decoration: none;
-}
-ul{
-  list-style-type: none;
-}
-
-
-.rotating-item-wrapper {
-    position: absolute
-    ;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-.rotating-item {
-    display: none;
-    position: absolute;
-     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+#button{
+    background-color: rgba(255,255,255, 0.8);
 }
 
 .cd-user-modal {
@@ -75,61 +27,101 @@ ul{
   transition: opacity 0.3s 0, visibility 0 0;
 }
 
-  a {
-    color: #00B7FF;
-  }
-
-  .siteName{
-    font-size: 70px;
-    position: relative;
-
+#droplist{
     text-align: center;
-    color: rgba(255,255,255, 0.8);
-  }
+    margin-top: 100px;
+}
 
-  #drop{
+#drop{
     background-color: rgba(255,255,255, 0.7);
     font-size: 20px;
     width: 200px;
     height: 50px;
     padding: 30px;
     margin: 0 auto;
-  }
+}
 
-  #navynav{
+footer{
+    color: white;
+    margin-top: 175px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+li{
+  text-decoration: none;
+}
+
+#navynav{
     top: -50px;
     width: 100%;
     background-color: rgba(255,255,255, 0.7);
-  }
+}
 
-  .pic{
+.pic{
     width: 100%;
     height: 100%;
     left: 0;
     top: 0px;
     position: absolute;
-  }
+}
 
+.rotating-item-wrapper {
+    position: absolute
+    ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
-  #droplist{
+.rotating-item {
+    display: none;
+    position: absolute;
+     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.siteName{
+    font-size: 70px;
+    position: relative;
     text-align: center;
-    margin-top: 100px;
-  }
+    color: rgba(255,255,255, 0.8);
+}
 
-  #button{
-    background-color: rgba(255,255,255, 0.8);
-  }
+.thumbs{
+  text-align: center;
+  margin: 0 auto;
+}
 
-  footer{
-    color: white;
-    margin-top: 175px;
-    text-align: center;
-  }
+#title{
+  color: #900000
+}
 
+.thumb{
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  /*background-color: red;*/
+  border: 3px solid red;
+  border-radius: 10px;
+}
+
+ul{
+  list-style-type: none;
+}
 
 
 /*login/signup*/
-/* Mask for background, by default is not display */
 #mask {
     display: none;
     background: #000;
