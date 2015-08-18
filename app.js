@@ -8,6 +8,7 @@ var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+
 var routes = require('./routes/index');
 
 var app = express();
@@ -26,12 +27,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //auth middleware
 app.use(require('express-session')({
-    secret: 'Team 4',
+    secret: 'Team Four',
     resave: false,
     saveUninitialized: false
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+
+app.locals.title = 'Escape... Adventure Awaits!';
 
 app.use('/', routes);
 
@@ -40,9 +43,8 @@ var User = require('./models/User');
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
-app.locals.title = 'Escape Travel';
 
-mongoose.connect('mongodb://localhost:27017/travel_app');
+mongoose.connect('mongodb://localhost/travel_app');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
