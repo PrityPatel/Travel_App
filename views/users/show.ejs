@@ -18,11 +18,22 @@ This page will include:
 <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <style type="text/css">
+  body {
+    background-image:url(http://a.fastcompany.net/multisite_files/fastcompany/poster/2013/11/3021592-poster-1280-cities.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #faebd7;
+  }
+  h1 {
+    font-size: 70px;
+  }
   .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
+    color: #000;
+
   }
   .container {
     margin: 0;
@@ -31,26 +42,33 @@ This page will include:
   .col-sm-5 {
     padding-left: 40px;
     padding-top: 70px;
-    margin-left: 100px;
+    margin-left: 150px;
     height: 100px;
     width: 250px;
     float: left;
   }
   .btn {
-    margin-top: 20px;
+    margin-top: 0;
   }
+  h3 {
+    color: #A9A9A9;
+  }
+
   </style>
 </head>
 <body>
   <%- include ../partials/nav.ejs %>
-  <h1 class="text-center">My Profile</h1>
+  <h1 class="text-center"><%=user.name%>'s Profile</h1>
   <div class="container">
     <div class="col-sm-5">
-      <button type="button" class="btn btn-primary">Browse Cities</button></br>
-      <button type="button" class="btn btn-primary">Edit My Profile</button></br>
+      <a href="../locations/cities">
+        <button type="button" class="btn btn-primary btn-lg">Browse Cities</button>
+      </a>
+      </br>
+      <button type="button" class="btn btn-primary btn-lg">Edit My Profile</button></br>
     </div>
     <div class="col-sm-5">
-      <h3 class=" pull-right">My Cities</h3>
+      <h3 class="pull-right">My Cities</h3>
       <%=  %>
     </div>
   </div>
