@@ -58,7 +58,7 @@ router.get( '/logout', sessionsController.destroy);
 
 //User CRUD
 //
-router.get('/user/:id', usersController.show);
+router.get('/users/:id', usersController.show);
 // router.get('/user/:id/edit', usersController.edit);
 
 
