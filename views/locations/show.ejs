@@ -17,6 +17,7 @@ So code will need to be written referencing location id. -->
 
 
 <style>
+
 body{
     background-image: url('https://secure.static.tumblr.com/24a9548d2580cd18e4b7a6d818f1737c/8w4ovhp/Mjcn2besk/tumblr_static_4-blue-watercolor-background.jpg');
     background-size: cover;
@@ -24,9 +25,23 @@ body{
 }
 
 </style>
+// <script>
+// $(function ()
+// {
+//     $('thumb').on('click', function ()
+//     {
+//         alert('asdf');
+//         $(this).width(1000);
+//     });
+// });
+// </script>
 
 </head>
 <body>
+
+
+<!-- code to enlarge image in new window -->
+<!-- <img src="http://www.fly4wonders.com/wp-content/uploads/2014/05/bg_main.jpg" onclick="window.open(this.src)" /> -->
 
 
 <p class="siteName_city">city_id</p>
@@ -56,7 +71,7 @@ body{
 
 <div class="city_thumbs">
     <p id="instagram_pics">Instagram Pics</p>
-    <div class="thumb"></div>
+    <div class="thumb"><img class="thumb_pic" src="http://www.fly4wonders.com/wp-content/uploads/2014/05/bg_main.jpg" onclick="window.open(this.src)" /></div>
     <div class="thumb"></div>
     <div class="thumb"></div>
     <div class="thumb"></div>
