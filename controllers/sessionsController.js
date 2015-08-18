@@ -2,7 +2,7 @@ var passport = require('passport');
 
 var User = require('../models/User');
 
-var renderLogin = function(req, res) {
+var newSession = function(req, res) {
   res.render('sessions/new', {user : req.user});
 };
 
@@ -19,7 +19,7 @@ var destroy = function(req, res) {
 };
 
 module.exports = {
-  renderLogin: renderLogin,
-  create:   create,
-  destroy:  destroy
+  newSession: newSession,
+  create:     create,
+  destroy:    destroy
 };

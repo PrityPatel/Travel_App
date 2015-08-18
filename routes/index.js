@@ -8,10 +8,6 @@ var usersController    = require('../controllers/usersController');
 var sessionsController = require('../controllers/sessionsController');
 var locationsController = require('../controllers/locationsController');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('welcome_page', { title: 'Welcome' });
-});
 
 /*
  * Passport auth helpers.
@@ -44,16 +40,31 @@ var loadCurrentUser = function(req, res, next) {
   }
 };
 
-router.get( '/register', usersController.renderRegister);
-router.post('/register', usersController.create);
-router.get('/user/:id', usersController.show);
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('welcome_page', { title: 'Welcome' });
+});
 
-router.get( '/login',  sessionsController.renderLogin);
+//register
+router.get( '/register', usersController.newUser);
+router.post('/register', usersController.create);
+
+//login
+router.get( '/login',  sessionsController.newSession);
 router.post('/login',  authenticateUser, sessionsController.create);
+
+//logout
 router.get( '/logout', sessionsController.destroy);
 
-router.get( '/locations',     locationsController.index);
+//User CRUD
+router.get('/user/new', usersController.newUser);
+router.get('/user/:id', usersController.show);
+// router.get('/user/:id/edit', usersController.edit);
+
+
+
+// router.get( '/locations',     locationsController.index);
 // router.post('/locations',     isLoggedIn, loadCurrentUser, locationsController);
-router.get( '/locations/:id', locationsController.show);
+// router.get( '/locations/:id', locationsController.show);
 
 module.exports = router;
