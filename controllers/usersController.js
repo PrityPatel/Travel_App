@@ -16,7 +16,7 @@ var create = function(req, res) {
         if (err) {
           return next(err);
         }
-        res.redirect('/users/:id');
+        res.redirect('/users/' + req.user.id);
       });
     });
   });
