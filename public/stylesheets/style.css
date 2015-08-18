@@ -141,6 +141,11 @@ li{
     top: 0;
 }
 
+#location_index_ul{
+  max-width: 950px;
+  left: 5px;
+}
+
 /*.login_form{
     color: rgba(255,255,255, 0.8);
 }*/
@@ -231,7 +236,7 @@ td{
   z-index: -1;
   float: left;
   margin-bottom: 20px;
-
+  width: 900px;
 }
 
 
@@ -244,6 +249,8 @@ td{
   /*z-index: 1;*/
   left: 0px;
   bottom: 0px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .thumb_pic:hover{
@@ -253,8 +260,8 @@ td{
   margin: 0 auto;
   float: left;
   position: relative;
-  left: -70px;
-  bottom: 70px;
+  left: -80px;
+  bottom: 80px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
