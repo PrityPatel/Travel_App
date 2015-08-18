@@ -18,7 +18,7 @@ body {
   margin-bottom: 400px;
 }
 
-.btn{
+.btn-xs{
   background-color: rgba(255,255,255, 0.5);
   border-radius: 5px;
   height: 23px;
@@ -230,6 +230,8 @@ td{
   margin: 0 auto;
   z-index: -1;
   float: left;
+  margin-bottom: 20px;
+
 }
 
 
@@ -238,7 +240,10 @@ td{
   height: 150px;
   border-radius: 10px;
   border: 3px solid black;
+  position: relative;
   /*z-index: 1;*/
+  left: 0px;
+  bottom: 0px;
 }
 
 .thumb_pic:hover{
@@ -248,8 +253,8 @@ td{
   margin: 0 auto;
   float: left;
   position: relative;
-  /*left: -40px;
-  bottom: 50px;*/
+  left: -70px;
+  bottom: 70px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
