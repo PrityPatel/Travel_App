@@ -1,8 +1,8 @@
 // Loading the Mongoose library
 var mongoose = require('mongoose');
 
-// Loading Location in order to reference locations in the User Schema
-var Location = require('./Location');
+// // Loading Location in order to reference locations in the User Schema
+// var Location = require('./Location');
 
 // Creating Schema to define structure of 'users' in our DB
 var UserSchema = new mongoose.Schema({
