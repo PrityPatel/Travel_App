@@ -51,9 +51,9 @@ router.get( '/login',  sessionsController.new);
 router.post('/login',  authenticateUser, sessionsController.create);
 router.get( '/logout', sessionsController.destroy);
 
-// router.get( '/locations',     locationsController.index);
-// router.post('/locations',     isLoggedIn, loadCurrentUser, locationsController);
-// router.get( '/locations/:id', locationsController.show);
+router.get( '/locations',     locationsController.index);
+router.post('/locations',     isLoggedIn, loadCurrentUser, locationsController);
+router.get( '/locations/:id', locationsController.show);
 
 module.exports = router;
 

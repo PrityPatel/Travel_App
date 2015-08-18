@@ -36,5 +36,5 @@ var show = function(req, res, next) {
 
 module.exports = {
   index:  index,
-  show:   show,
+  show:   show
 };
