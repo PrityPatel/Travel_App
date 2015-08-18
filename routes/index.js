@@ -45,6 +45,7 @@ var loadCurrentUser = function(req, res, next) {
 
 router.get( '/register', usersController.new);
 router.post('/register', usersController.create);
+router.get('/user/show', usersController.show);
 
 router.get( '/login',  sessionsController.new);
 router.post('/login',  authenticateUser, sessionsController.create);
