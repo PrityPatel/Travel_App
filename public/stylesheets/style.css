@@ -7,8 +7,7 @@ a {
 
 body {
     padding: 50px;
-
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     font-family: 'Bangers', cursive;
     background-color: black;
@@ -26,7 +25,7 @@ body {
     left: 205px;
 }
 
-.cd-user-modal {
+/*.cd-user-modal {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s 0, visibility 0 0.3s;
@@ -36,7 +35,7 @@ body {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s 0, visibility 0 0;
-}
+}*/
 
 .city{
   text-align: center;
@@ -51,6 +50,12 @@ body {
     font-size: 25px;
     text-align: center;
     color: white;
+}
+
+.city_link{
+  display: inline;
+  color: red;
+  margin: 20px;
 }
 
 .city_thumbs{
@@ -162,8 +167,8 @@ li{
 
 .rotating-item {
     display: none;
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width: 1200px;
     height: 100%;
     top: 0;
     left: 0;
@@ -218,7 +223,7 @@ td{
   width: 150px;
   height: 150px;
   border-radius: 10px;
-  border: 3px solid red;
+  border: 3px solid black;
   /*z-index: 1;*/
 }
 
