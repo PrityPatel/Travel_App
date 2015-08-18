@@ -34,7 +34,7 @@ app.use(require('express-session')({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.locals.title = 'Escape Travel';
+app.locals.title = 'Escape... Adventure Awaits!';
 
 app.use('/', routes);
 

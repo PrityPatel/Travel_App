@@ -27,7 +27,7 @@ var show = function(req, res, next) {
   User.findById({_id: id}, function(error, user) {
     if(error) res.json({message: 'Could not find User because: ' + error});
         res.render(
-          'users/:id',
+          'user/:id',
           {
             user: req.user
         }
@@ -37,6 +37,9 @@ var show = function(req, res, next) {
       });
 };
 
+//NEED TO WRITE CODE TO EDIT USER PROFILE
+
+//NEED TO WRITE CODE TO DELETE USER PROFILE
 
 
 module.exports = {

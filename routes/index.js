@@ -62,9 +62,9 @@ router.get('/user/:id', usersController.show);
 // router.get('/user/:id/edit', usersController.edit);
 
 
-
-// router.get( '/locations',     locationsController.index);
-// router.post('/locations',     isLoggedIn, loadCurrentUser, locationsController);
-// router.get( '/locations/:id', locationsController.show);
+//Location resource; need to write route to delete location from user profile
+router.get('/locations',     locationsController.index);
+router.post('/locations',     isLoggedIn, loadCurrentUser, locationsController.create);
+router.get( '/locations/show', locationsController.show);
 
 module.exports = router;
