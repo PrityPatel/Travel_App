@@ -40,7 +40,7 @@ var User = require('./models/User');
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
-app.locals.title = 'Virtual Travel';
+app.locals.title = 'Escape Travel';
 
 mongoose.connect('mongodb://localhost:27017/travel_app');
 
