@@ -87,12 +87,12 @@ body {
     top: 170px;
 }
 
-#droplist{
+.droplist{
     text-align: center;
     top: 10px;
     display: inline;
     position: absolute;
-    left: 320px;
+    left: 400px;
 }
 #droplist_city{
     /*text-align: center;*/
