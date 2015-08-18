@@ -5,12 +5,6 @@ $( document ).ready(function() {
 $('body').fadeTo(0, 0).fadeTo(1000, 1);
 
 
-//enlarge images
-   // $('thumb_pic').on('click', function ()
-   //  {
-   //      alert('asdf');
-   //      $(this).width(1000);
-   //  });
 
 
 
