@@ -1,10 +1,13 @@
 a {
-    color: #00B7FF;
+    /*color: #00B7FF;*/
+    /*text-decoration: none;*/
+    color: black;
+    font-size: 25px;
 }
 
 body {
     padding: 50px;
-    /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Bangers', cursive;
@@ -112,6 +115,10 @@ li{
     left: 0;
     top: 0;
 }
+
+/*.login_form{
+    color: rgba(255,255,255, 0.8);
+}*/
 
 #my_list_button{
     position: absolute;
