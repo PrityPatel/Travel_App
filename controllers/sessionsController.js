@@ -9,7 +9,8 @@ var newSession = function(req, res) {
 var create = function(req, res, next) {
   req.session.save(function (err) {
     if (err) return next(err);
-    res.redirect('/users/:id');
+    res.redirect('/users/' + req.user.id);
+
   });
 };
 
