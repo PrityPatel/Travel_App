@@ -1,6 +1,54 @@
-This is the page where a single location will be rendered.
+<!-- This is the page where a single location will be rendered.
 
 Logged in users have the option to add the location to their profile.
 
-Logged in users also have the option to 'connect' with instagram users by using OAuth (icebox)
+Logged in users also have the option to 'connect' with instagram users by using OAuth (icebox) -->
 
+<html>
+<head>
+  <% include partials/head %>
+</head>
+<body>
+<% include partials/nav %>
+
+<p class="siteName">city</p>
+
+<div id="droplist">
+<select id="drop">
+  <option selected disabled>Choose a City</option>
+  <option>London</option>
+  <option>New York</option>
+  <option>Shanghai</option>
+  <option>Paris</option>
+  <option>San Fransisco</option>
+  <option>Mumbai</option>
+</select>
+
+<button id="button" type="button" class="btn btn-default"><a href="locations/show" title="">GO!</a></button>
+
+</div>
+
+<div class="thumbs">
+    <div class="thumb"></div>
+    <div class="thumb"></div>
+    <div class="thumb"></div>
+    <div class="thumb"></div>
+    <div class="thumb"></div>
+</div>
+
+<div id="costs">
+  <ul>
+    <h1>city</h1>
+    <li>cost 1</li>
+    <li>cost 2</li>
+    <li>cost 3</li>
+  </ul>
+
+</div>
+
+
+
+
+<% include partials/footer %>
+</body>
+</html>
