@@ -1,14 +1,14 @@
 a {
     /*color: #00B7FF;*/
     /*text-decoration: none;*/
-    color: black;
+    /*color: black;*/
+
     /*font-size: 25px;*/
 }
 
 body {
     padding: 50px;
-
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     font-family: 'Bangers', cursive;
     background-color: black;
@@ -16,6 +16,12 @@ body {
 
 #bottom{
   margin-bottom: 400px;
+}
+
+.btn-xs{
+  background-color: rgba(255,255,255, 0.5);
+  border-radius: 5px;
+  height: 23px;
 }
 
 #button{
@@ -26,7 +32,7 @@ body {
     left: 205px;
 }
 
-.cd-user-modal {
+/*.cd-user-modal {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s 0, visibility 0 0.3s;
@@ -36,7 +42,7 @@ body {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s 0, visibility 0 0;
-}
+}*/
 
 .city{
   text-align: center;
@@ -45,12 +51,24 @@ body {
   /*display: inline-block;*/
   /*position: absolute;*/
   top: -50px;
+  color: white;
 }
 
 #city_expense{
     font-size: 25px;
     text-align: center;
     color: white;
+}
+
+.city_link{
+  display: inline;
+  color: red;
+  margin: 20px;
+}
+
+.city_name{
+  color: white;
+  font-size: 30px;
 }
 
 .city_thumbs{
@@ -69,12 +87,12 @@ body {
     top: 170px;
 }
 
-#droplist{
+.droplist{
     text-align: center;
     top: 10px;
     display: inline;
     position: absolute;
-    left: 320px;
+    left: 400px;
 }
 #droplist_city{
     /*text-align: center;*/
@@ -123,6 +141,11 @@ li{
     top: 0;
 }
 
+#location_index_ul{
+  max-width: 950px;
+  left: 5px;
+}
+
 /*.login_form{
     color: rgba(255,255,255, 0.8);
 }*/
@@ -162,8 +185,8 @@ li{
 
 .rotating-item {
     display: none;
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width: 1200px;
     height: 100%;
     top: 0;
     left: 0;
@@ -211,6 +234,9 @@ td{
   text-align: center;
   margin: 0 auto;
   z-index: -1;
+  float: left;
+  margin-bottom: 20px;
+  width: 900px;
 }
 
 
@@ -218,8 +244,13 @@ td{
   width: 150px;
   height: 150px;
   border-radius: 10px;
-  border: 3px solid red;
+  border: 3px solid black;
+  position: relative;
   /*z-index: 1;*/
+  left: 0px;
+  bottom: 0px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .thumb_pic:hover{
@@ -229,8 +260,8 @@ td{
   margin: 0 auto;
   float: left;
   position: relative;
-  /*left: -40px;
-  bottom: 50px;*/
+  left: -80px;
+  bottom: 80px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -241,7 +272,7 @@ td{
 
 .thumb{
 float: left;
-  margin: 10px;
+  margin: 12px;
   width: 150px;
   height: 150px;
   /*margin: 0 auto;*/
