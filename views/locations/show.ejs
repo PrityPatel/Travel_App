@@ -1,23 +1,45 @@
-THIS PAGE DOES RENDER, BUT NEEDS TO BE STYLED
+<!DOCTYPE html>
+<!-- THIS PAGE DOES RENDER, BUT NEEDS TO BE STYLED -->
+<!-- <br>
 <br>
-<br>
-This is the page where a single location will be rendered.
-So code will need to be written referencing location id.
-<br>
-Logged in users have the option to add/save the location to their profile.
-<br>
-<br>
+ --><!-- This is the page where a single location will be rendered.
+So code will need to be written referencing location id. -->
+<!-- <br> -->
+<!-- Logged in users have the option to add/save the location to their profile. -->
+<!-- <br>
+<br> -->
 
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href=" /stylesheets/style.css">
+  <script src="/script/javascript.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+<style>
+body{
+    background-image: url('https://secure.static.tumblr.com/24a9548d2580cd18e4b7a6d818f1737c/8w4ovhp/Mjcn2besk/tumblr_static_4-blue-watercolor-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+</style>
 
 </head>
 <body>
 
 
-<p class="siteName">city</p>
+<p class="siteName_city">city_id</p>
 
-<div id="droplist">
+<button id="my_list_button" type="button" ">Add this City to my List</button>
+
+<!-- <form>
+<input type="radio" name="list" value="list" >Add this city to my list
+</form> -->
+
+
+
+<!-- <div id="droplist_city" style="margin-bottom: 20px;">
 <select id="drop">
   <option selected disabled>Choose a City</option>
   <option>London</option>
@@ -28,11 +50,12 @@ Logged in users have the option to add/save the location to their profile.
   <option>Mumbai</option>
 </select>
 
-<button id="button" type="button" class="btn btn-default"><a href="locations/show" title="">GO!</a></button>
+<button id="button" type="button" class="btn btn-default"><a href="locations/show" title="">GO!</a></button> -->
 
 </div>
 
-<div class="thumbs">
+<div class="city_thumbs">
+    <p id="instagram_pics">Instagram Pics</p>
     <div class="thumb"></div>
     <div class="thumb"></div>
     <div class="thumb"></div>
@@ -41,12 +64,40 @@ Logged in users have the option to add/save the location to their profile.
 </div>
 
 <div id="costs">
-  <ul>
-    <h1>city</h1>
-    <li>cost 1</li>
-    <li>cost 2</li>
-    <li>cost 3</li>
-  </ul>
+
+    <p id="city_name"></p>
+    <table>
+      <caption id="city_expense">Living Expenses for city_id</caption>
+      <thead>
+        <tr>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hotel</td>
+          <td>$$$</td>
+        </tr>
+        <tr>
+          <td>Subway</td>
+          <td>$$$</td>
+        </tr>
+        <tr>
+          <td>Dinner</td>
+          <td>$$$</td>
+        </tr>
+        <tr>
+          <td>Taxi</td>
+          <td>$$$</td>
+        </tr>
+        <tr>
+          <td>Daily Costs</td>
+          <td>$$$</td>
+        </tr>
+      </tbody>
+    </table>
+
+
 
 </div>
 
