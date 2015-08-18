@@ -1,1 +1,108 @@
-This is the landing page
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include partials/head %>
+
+  <link rel="stylesheet" type="text/css" href=" /stylesheets/style.css">
+  <script src="/script/javascript.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<% include partials/nav %>
+
+
+<div id="pictures">
+  <div class="rotating-item-wrapper">
+    <img class="rotating-item" src="http://statewideinsurance.com.au/wp-content/uploads/2015/07/corporate-travel.jpg
+  " />
+     <img class="rotating-item" src="http://www.fivecentnickel.com/uploadedfiles/wp-content/uploads/2010/06/2010.06.25.jpg"  />
+     <img class="rotating-item" src="http://www.cultnoise.com/wp-content/uploads/2015/02/vacation.jpg"  />
+     <img class="rotating-item" src="http://cdnstatic-2.mydestination.com/blog/wp-content/uploads/2013/06/shutterstock_133339211-Copy.jpg"   />
+     <img class="rotating-item" src="http://www.chaptercruise.com/wp-content/uploads/2015/07/Summer-travelling-Tips.jpeg" />
+     <img class="rotating-item" src="http://cdn1.globetrottingstiletto.com/wp-content/uploads/2014/10/Travel-Insurance.jpg" />
+    <img class="rotating-item" src="http://www.unh.edu/oiss/sites/www.unh.edu.oiss/files/general/world_travel.jpg" />
+
+    <img class="rotating-item" src="https://sigallebarness.files.wordpress.com/2014/02/travel.jpg?w=1200&h=801
+    " />
+  </div>
+
+</div>
+
+
+<p class="siteName">Escape! Adventure Awaits!</p>
+
+<div id="droplist">
+<select id="drop">
+  <option selected disabled>Choose a City</option>
+  <option>London</option>
+  <option>New York</option>
+  <option>Shanghai</option>
+  <option>Paris</option>
+  <option>San Fransisco</option>
+  <option>Mumbai</option>
+</select>
+
+<button id="button" type="button" class="btn btn-default"><a href="locations/show" title="">GO!</a></button>
+
+</div>
+
+<!-- login/signup -->
+<div id="login-box" class="login-popup">
+
+  <form method="post" class="signin" action="#">
+    <a href="/" class="close"><img src="http://www.massterlist.com/wp-content/uploads/xyz_lbx/xyz_cls/8_close-button-red-small.png" alt="Close" /></a>
+        <fieldset class="textbox">
+        <label class="username">
+        <span>Username or email</span>
+        <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username or Email">
+        </label>
+        <label class="password">
+        <span>Password</span>
+        <input id="password" name="password" value="" type="password" placeholder="Password">
+        </label>
+        <button id="signup_button" type="submit button" class="btn  btn-default"><a href="/" class="login-window">Login</a></button>
+        <button type="submit button" class="btn  btn-default"><a href="#signin-box" class="login-window">Signup</a></button>
+        <p>
+        <!-- <a class="forgot" href="#">Forgot your password?</a> -->
+        </p>
+        </fieldset>
+  </form>
+</div>
+
+<div id="signin-box" class="login-popup">
+
+  <form method="post" class="signin" action="#">
+    <a href="/" class="close"><img src="http://www.massterlist.com/wp-content/uploads/xyz_lbx/xyz_cls/8_close-button-red-small.png" class="btn_close" title="Close Window" alt="Close" /></a>
+        <fieldset class="textbox">
+        <label class="username">
+        <span>Username or email</span>
+        <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username or Email">
+        </label>
+        <label class="password">
+        <span>Password</span>
+        <input id="password" name="password" value="" type="password" placeholder="Password">
+        <input id="password" name="password" value="" type="password" placeholder="Re-enter Password">
+        </label>
+        <button type="submit button" class="btn  btn-default"><a href="/" class="login-window">Signup</a></button>
+        <p>
+        <!-- <a class="forgot" href="#">Forgot your password?</a> -->
+        </p>
+        </fieldset>
+  </form>
+</div>
+
+
+
+
+
+
+
+<% include partials/head %>
+</body>
+
+</html>
