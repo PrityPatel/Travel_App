@@ -16,22 +16,17 @@ var create = function(req, res) {
         if (err) {
           return next(err);
         }
-        res.redirect('/users/:id');
+        res.redirect('/users/' + req.user.id);
       });
     });
   });
 };
 
 var show = function(req, res, next) {
-  var id = req.params.id;
+  var id = req.user.id;
   User.findById({_id: id}, function(error, user) {
     if(error) res.json({message: 'Could not find User because: ' + error});
-        res.render(
-          'user/:id',
-          {
-            user: req.user
-        }
-        );
+        res.render('users/show', {user: user});
         //api time!
         //rs.json (user: user});
       });

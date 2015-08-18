@@ -11,12 +11,14 @@ So code will need to be written referencing location id. -->
 
 <html>
 <head>
+  <% include ../partials/head %>
     <link rel="stylesheet" type="text/css" href=" /stylesheets/style.css">
   <script src="/script/javascript.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 
 <style>
+
 body{
     background-image: url('https://secure.static.tumblr.com/24a9548d2580cd18e4b7a6d818f1737c/8w4ovhp/Mjcn2besk/tumblr_static_4-blue-watercolor-background.jpg');
     background-size: cover;
@@ -27,40 +29,30 @@ body{
 
 </head>
 <body>
+  <% include ../partials/logout_nav %>
 
 
-<p class="siteName_city">city_id</p>
+<!-- code to enlarge image in new window -->
+<!-- <img src="http://www.fly4wonders.com/wp-content/uploads/2014/05/bg_main.jpg" onclick="window.open(this.src)" /> -->
+
+
+<p class="siteName_city">location_id</p>
 
 <button id="my_list_button" type="button" ">Add this City to my List</button>
 
-<!-- <form>
-<input type="radio" name="list" value="list" >Add this city to my list
-</form> -->
-
-
-
-<!-- <div id="droplist_city" style="margin-bottom: 20px;">
-<select id="drop">
-  <option selected disabled>Choose a City</option>
-  <option>London</option>
-  <option>New York</option>
-  <option>Shanghai</option>
-  <option>Paris</option>
-  <option>San Fransisco</option>
-  <option>Mumbai</option>
-</select>
-
-<button id="button" type="button" class="btn btn-default"><a href="locations/show" title="">GO!</a></button> -->
-
-</div>
 
 <div class="city_thumbs">
     <p id="instagram_pics">Instagram Pics</p>
-    <div class="thumb"></div>
-    <div class="thumb"></div>
-    <div class="thumb"></div>
-    <div class="thumb"></div>
-    <div class="thumb"></div>
+    <div class="thumb"><img class="thumb_pic" src="http://media.tumblr.com/tumblr_lymp08t2bX1qm4rc3.jpg" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="http://www.sarahdawson.net/wp-content/uploads/2013/01/ellekingparis-4.jpg" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+
+    <div class="thumb"><img class="thumb_pic" src="http://instagramers.com/wp-content/uploads/2013/06/IMG_6347.jpg" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
 </div>
 
 <div id="costs">
@@ -100,7 +92,6 @@ body{
 
 
 </div>
-
 
 
 
