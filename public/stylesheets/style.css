@@ -7,6 +7,42 @@
     background-color: black;
   }
 
+  h1{
+    text-align: center;
+  }
+.thumbs{
+/*  height: 350px;
+  width: 600px;*/
+  /*background-color: red;*/
+  text-align: center;
+  margin: 0 auto;
+}
+
+#title{
+  color: #900000
+}
+
+
+.thumb{
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  /*background-color: red;*/
+  border: 3px solid red;
+  border-radius: 10px;
+}
+li{
+/*  text-align: center;
+  margin: 20px;
+  font-size: 20px;*/
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
 
 
 .rotating-item-wrapper {
@@ -45,6 +81,8 @@
 
   .siteName{
     font-size: 70px;
+    position: relative;
+
     text-align: center;
     color: rgba(255,255,255, 0.8);
   }
@@ -84,7 +122,7 @@
 
   footer{
     color: white;
-
+    margin-top: 200px;
     text-align: center;
   }
 
