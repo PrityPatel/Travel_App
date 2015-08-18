@@ -28,6 +28,9 @@ This page will include:
   h1 {
     font-size: 60px;
   }
+  h3 {
+    margin-top: 0;
+  }
   #footer {
     position: absolute;
     bottom: 0;
@@ -36,10 +39,15 @@ This page will include:
     color: #000;
 
   }
-  .container {
+  .container1 {
+    float: left;
     margin: 0;
     padding: 0;
   }
+  .container2{
+
+  }
+
   .col-sm-5 {
     padding-left: 40px;
     padding-top: 70px;
@@ -49,13 +57,12 @@ This page will include:
     float: left;
   }
 
-
   </style>
 </head>
 <body>
   <%- include ../partials/logout_nav.ejs %>
   <h1 class="text-center"><%=user.name%>'s Profile</h1>
-  <div class="container">
+  <div class="container1">
     <div class="col-sm-5">
       <p>
         <a href="../locations/show">
@@ -66,9 +73,10 @@ This page will include:
         <button type="button" class="btn btn-primary btn-lg">Edit My Profile</button>
       </p>
     </div>
-
+  </div>
+  <div class="container2">
     <div class="col-sm-5">
-      <h3 class="pull-right">My Cities</h3>
+      <h3 class="">My Cities</h3>
     </div>
   </div>
   <%- include ../partials/footer.ejs %>
