@@ -1,6 +1,4 @@
 var express = require('express');
-var app = express();
-var server = require('http').createServer(app);
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -11,8 +9,8 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var routes = require('./routes/index');
-var port = process.env.PORT || 3000;
 
+var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -43,10 +41,6 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 app.locals.title = 'Virtual Travel';
-
-server.listen(port, function() {
-  console.log('Hey im running!')
-});
 
 mongoose.connect('mongodb://localhost:27017/travel_app');
 
