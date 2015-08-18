@@ -1,4 +1,4 @@
-This is the view of the user's profile page.
+<!-- This is the view of the user's profile page.
 
 This page will include:
 
@@ -6,5 +6,72 @@ This page will include:
 -the option to browse locations
 -the option to edit their profile
 -the option to delete their profile
--the option to log out
+-the option to log out -->
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <style type="text/css">
+  body {
+    background-image:url(http://a.fastcompany.net/multisite_files/fastcompany/poster/2013/11/3021592-poster-1280-cities.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #faebd7;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .col-sm-5 {
+    padding-left: 40px;
+    padding-top: 70px;
+    margin-left: 150px;
+    height: 100px;
+    width: 250px;
+    float: left;
+  }
+  .btn {
+    margin-top: 0;
+  }
+  h3 {
+    color: #A9A9A9;
+  }
+
+  </style>
+</head>
+<body>
+  <%- include ../partials/nav.ejs %>
+  <h1 class="text-center"><%=user.name%>'s Profile</h1>
+  <div class="container">
+    <div class="col-sm-5">
+      <a href="../locations/cities">
+        <button type="button" class="btn btn-primary btn-lg">Browse Cities</button>
+      </a>
+      </br>
+      <button type="button" class="btn btn-primary btn-lg">Edit My Profile</button></br>
+    </div>
+    <div class="col-sm-5">
+      <h3 class="pull-right">My Cities</h3>
+      <%=  %>
+    </div>
+  </div>
+  <%- include ../partials/footer.ejs %>
+</body>
+</html>
