@@ -11,6 +11,7 @@ This page will include:
 <!DOCTYPE html>
 <html>
 <head>
+  <% include ../partials/head %>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
@@ -57,7 +58,7 @@ This page will include:
   </style>
 </head>
 <body>
-  <%- include ../partials/nav.ejs %>
+  <% include ../partials/logout_nav.ejs %>
   <h1 class="text-center"><%=user.name%>'s Profile</h1>
   <div class="container">
     <div class="col-sm-5">
@@ -69,9 +70,9 @@ This page will include:
     </div>
     <div class="col-sm-5">
       <h3 class="pull-right">My Cities</h3>
-      <%=  %>
+
     </div>
   </div>
-  <%- include ../partials/footer.ejs %>
+
 </body>
 </html>
