@@ -3,13 +3,13 @@ var passport = require('passport');
 var User = require('../models/User');
 
 var newSession = function(req, res) {
-  res.render('sessions/new', {user : req.user});
+  res.render('auth/login', {user : req.user});
 };
 
 var create = function(req, res, next) {
   req.session.save(function (err) {
     if (err) return next(err);
-    res.redirect('/');
+    res.redirect('/user/:id');
   });
 };
 
@@ -23,3 +23,4 @@ module.exports = {
   create:     create,
   destroy:    destroy
 };
+
