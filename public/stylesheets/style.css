@@ -14,6 +14,10 @@ body {
     background-color: black;
 }
 
+#bottom{
+  margin-bottom: 400px;
+}
+
 #button{
     background-color: rgba(255,255,255, 0.8);
     position: absolute;
@@ -46,6 +50,7 @@ body {
 #city_expense{
     font-size: 25px;
     text-align: center;
+    color: white;
 }
 
 .city_thumbs{
@@ -53,6 +58,7 @@ body {
     display: inline-block;
     position: absolute;
     top: 120px;
+    margin-bottom: 250px;
 }
 
 #costs{
@@ -183,8 +189,8 @@ li{
 .siteName_city{
     font-size: 70px;
     position: absolute;
-    top: -40px;
-    left: 400px;
+    top: 40px;
+    left: 370px;
     text-align: center;
     color: rgba(255,255,255, 0.8);
 }
@@ -207,10 +213,6 @@ td{
   z-index: -1;
 }
 
-/*.thumbs:hover{
-  width: 400px;
-  height: 400px;
-}*/
 
 .thumb_pic{
   width: 150px;
@@ -227,8 +229,10 @@ td{
   margin: 0 auto;
   float: left;
   position: relative;
-  left: -40px;
-  bottom: 50px;
+  /*left: -40px;
+  bottom: 50px;*/
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #title{
