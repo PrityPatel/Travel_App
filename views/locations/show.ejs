@@ -16,16 +16,23 @@ So code will need to be written referencing location id. -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 
+<style>
+body{
+    background-image: url('https://secure.static.tumblr.com/24a9548d2580cd18e4b7a6d818f1737c/8w4ovhp/Mjcn2besk/tumblr_static_4-blue-watercolor-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+</style>
 
 </head>
 <body>
-  <div id="show_back"></div>
+<!-- <div id="show_back"></div> -->
 
 
-<p class="siteName">city</p>
+<p class="siteName_city">city</p>
 
-<div id="droplist">
+<div id="droplist_city" style="margin-bottom: 20px;">
 <select id="drop">
   <option selected disabled>Choose a City</option>
   <option>London</option>
@@ -40,7 +47,7 @@ So code will need to be written referencing location id. -->
 
 </div>
 
-<div class="thumbs">
+<div class="city_thumbs">
     <div class="thumb"></div>
     <div class="thumb"></div>
     <div class="thumb"></div>
@@ -49,8 +56,8 @@ So code will need to be written referencing location id. -->
 </div>
 
 <div id="costs">
-  <ul>
-    <h1>city</h1>
+  <ul id="costs_ul">
+    <p id="city_name">city</p>
     <li>cost 1</li>
     <li>cost 2</li>
     <li>cost 3</li>
