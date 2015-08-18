@@ -26,12 +26,7 @@ var show = function(req, res, next) {
   var id = req.params.id;
   User.findById({_id: id}, function(error, user) {
     if(error) res.json({message: 'Could not find User because: ' + error});
-        res.render(
-          'user/:id',
-          {
-            user: req.user
-        }
-        );
+        res.render('users/show', {user: user});
         //api time!
         //rs.json (user: user});
       });
