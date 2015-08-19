@@ -79,19 +79,19 @@ body {
 }
 
 .city_thumbs{
-    width: 420px;
+    width: 525px;
     display: inline-block;
     position: absolute;
-    top: 120px;
+    top: 150px;
     margin-bottom: 250px;
 }
 
 #costs{
     color: white;
     position: absolute;
-    right: 200px;
+    right: 100px;
     display: inline-block;
-    top: 170px;
+    top: 180px;
 }
 
 .droplist{
@@ -100,6 +100,9 @@ body {
     display: inline;
     position: absolute;
     left: 400px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
 }
 
 #droplist_city{
@@ -162,8 +165,8 @@ li{
 
 #my_list_button{
     position: absolute;
-    top: 140px;
-    left: 440px;
+    top: 100px;
+    right: 140px;
 }
 
 .navynav{
