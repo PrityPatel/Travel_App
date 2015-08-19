@@ -8,6 +8,7 @@ var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var flash = require('connect-flash');
 
 var routes = require('./routes/index');
 
@@ -24,6 +25,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(flash());
 
 //auth middleware
 app.use(require('express-session')({
@@ -53,6 +55,7 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+// request methods for the Instagram API
 require('./api/instagram');
 
 // error handlers
