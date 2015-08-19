@@ -64,16 +64,13 @@ h3 {
 <body>
   <% include ../partials/user_show_nav.ejs %>
   <h1 class="text-center"><%= user.name %>'s Profile</h1>
-  <div class="container">
-    <div class="col-sm-5">
-      <!-- <button type="button" class="btn btn-primary btn-lg">Edit My Profile</button></br> -->
-    </div>
-    <div class="col-sm-5">
-  <!-- This will populate user's saved cities -->
-      <h3 id="my_cities" class="pull-right">My Cities</h3>
 
-    </div>
-  </div>
+</div>
+  <!-- This will populate user's saved cities -->
+      <h3 id="my_cities" class="text-center">My Cities</h3>
+
+
+
 
 <% if (user.location) { %>
   <% user.location.forEach(function(location){ %>

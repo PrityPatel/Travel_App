@@ -264,6 +264,12 @@ td{
   border: 5px solid black;
 }
 
+.thumbs_small{
+  background-color: black;
+  width: 200px;
+  height: 100px;
+}
+
 #thumb_london, #thumb_mumbai, #thumb_new_york, #thumb_paris, #thumb_san_fransisco, #thumb_shanghai{
   background-size: cover;
 }
