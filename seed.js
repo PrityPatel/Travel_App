@@ -34,7 +34,10 @@ var createUsers = function(done) {
   // `Promise.all` returns a promise that is fulfilled when all the items in the array are fulfilled.
   Promise.all([
     User.create({
-      name: 'Phil'
+      name: 'Phil',
+      username: 'Phil',
+      email: 'phil@email.com',
+      password: 'phil'
     }).then(
       function(user) {
         console.log('User created: ', user.name);
@@ -45,7 +48,10 @@ var createUsers = function(done) {
       }
     ),
     User.create({
-      name: 'Jim'
+      name: 'Jim',
+      username: 'Jim',
+      email: 'jim@email.com',
+      password: 'jim'
     }).then(
       function(user) {
         console.log('User created: ', user.name);
