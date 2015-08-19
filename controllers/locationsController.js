@@ -18,7 +18,7 @@ var index = function(req, res, next) {
     });
 };
 
-//this code is currently incorrect as creating is meant to mean a user can SAVE location to their profile
+
 var create = function(req, res){
   var newLocation = req.body.location;
   newLocation.username = req.user.name;
@@ -33,7 +33,7 @@ var create = function(req, res){
           });
 };
 
-//this code will need to be appended as it would need to include the location id as only 1 location view will render. also users will have the option to save the location
+
 var show = function(req, res, next) {
   var instagramData;
   instagram.get(req.params.id, function(stringdata){
