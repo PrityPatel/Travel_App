@@ -75,7 +75,7 @@ h3 {
   <h1 class="text-center"><%= user.name %>'s Profile</h1>
   <div class="container">
     <div class="col-sm-5">
-      <button type="button" class="btn btn-primary btn-lg">Edit My Profile</button></br>
+      <!-- <button type="button" class="btn btn-primary btn-lg">Edit My Profile</button></br> -->
     </div>
     <div class="col-sm-5">
   <!-- This will populate user's saved cities -->
@@ -83,6 +83,16 @@ h3 {
 
     </div>
   </div>
+
+<% if (user.location) { %>
+  <% user.location.forEach(function(location){ %>
+  <div id="thumbs_small">
+  <a href="/locations/<%= location.id %>" >
+    <img src="<%= location.image_uri %> ">
+  </a>
+  </div>
+  <% }) %>
+  <% } %>
 
 </body>
 </html>
