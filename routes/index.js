@@ -1,17 +1,18 @@
 var express = require('express');
 var passport = require('passport');
+
+//require models
 var User = require('../models/User');
+//require router
 var router = express.Router();
 
-
+// require controllers
 var usersController    = require('../controllers/usersController');
 var sessionsController = require('../controllers/sessionsController');
 var locationsController = require('../controllers/locationsController');
 
 
-/*
- * Passport auth helpers.
- */
+//Passport authentication helpers
 
 var authenticateUser = passport.authenticate(
   'local',
@@ -45,21 +46,28 @@ router.get('/', function(req, res, next) {
   res.render('welcome_page', { title: 'Welcome' });
 });
 
-//register
-router.get( '/register', usersController.newUser);
-router.post('/register', usersController.create);
+//register new and save new user (listed under User CRUD)
+// router.get( '/register', usersController.newUser);
+// router.post('/register', usersController.create);
 
-//login
+//login existing user
 router.get( '/login',  sessionsController.newSession);
 router.post('/login',  authenticateUser, sessionsController.create);
 
-//logout
+//logout existing user
 router.get( '/logout', sessionsController.destroy);
 
 //User CRUD
-//
+//Create and save new user
+router.get( '/register', usersController.newUser);
+router.post('/register', usersController.create);
+//Read user
 router.get('/users/:id', usersController.show);
-// router.get('/user/:id/edit', usersController.edit);
+//Update user
+router.get('/user/:id/edit', usersController.editUser);
+router.put('/user/:id', usersController.editUser);
+//Delete user
+router.delete('/user/:id', usersController.removeUser);
 
 
 //Location resource; need to write route to delete location from user profile
