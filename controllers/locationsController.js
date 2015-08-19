@@ -36,11 +36,13 @@ var create = function(req, res){
 //this code will need to be appended as it would need to include the location id as only 1 location view will render. also users will have the option to save the location
 var show = function(req, res, next) {
   var instagramData;
-  instagram.get(req.params.id, function(data){
-    instagramData = data;
-      console.log(instagramData);
-
-
+  instagram.get(req.params.id, function(stringdata){
+    instagramData = JSON.parse(stringdata);
+    console.log('instagramData: ' + instagramData)
+    instagramData = instagramData.data.map(function(post){
+      return post.images.standard_resolution.url
+    });
+    console.log('instagramData mapped: ' + instagramData);
     Location.findById(req.params.id, function(location) {
           res.render('locations/show',
             {
