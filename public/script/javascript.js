@@ -5,6 +5,7 @@ $( document ).ready(function() {
 $('body').fadeTo(0, 0).fadeTo(1000, 1);
 
 
+
 // $('#button').click(function(){
 // $('body').fadeTo(500, 0);
 // href="locations/show";
