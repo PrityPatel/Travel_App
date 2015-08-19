@@ -38,9 +38,9 @@ var show = function(req, res, next) {
   var instagramData;
   instagram.get(req.params.id, function(stringdata){
     instagramData = JSON.parse(stringdata);
-    console.log('instagramData: ' + instagramData)
+    console.log('instagramData: ' + instagramData);
     instagramData = instagramData.data.map(function(post){
-      return post.images.standard_resolution.url
+      return post.images.standard_resolution.url;
     });
     console.log('instagramData mapped: ' + instagramData);
     Location.findById(req.params.id, function(location) {
