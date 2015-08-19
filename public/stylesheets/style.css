@@ -103,6 +103,7 @@ body {
     width: 200px;
     height: 30px;
     font-size: 20px;
+    color: black;
 }
 
 #droplist_city{
@@ -162,6 +163,10 @@ li{
 /*.login_form{
     color: rgba(255,255,255, 0.8);
 }*/
+
+#my_cities{
+  color: black;
+}
 
 #my_list_button{
     position: absolute;
@@ -259,34 +264,38 @@ td{
   border: 5px solid black;
 }
 
+.thumbs_small{
+  background-color: black;
+  width: 200px;
+  height: 100px;
+}
+
+#thumb_london, #thumb_mumbai, #thumb_new_york, #thumb_paris, #thumb_san_fransisco, #thumb_shanghai{
+  background-size: cover;
+}
+
 #thumb_london{
   background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/amznlcl/onsite/regionimages/UKLondon_Fotolia_53327501_Subscription_XL_657x230._CB333190876_.jpg');
-  background-size: cover;
 }
 
 #thumb_mumbai{
   background-image: url('http://i.huffpost.com/gen/1824143/images/o-MUMBAI-facebook.jpg');
-  background-size: cover;
 }
 
 #thumb_new_york{
   background-image: url('http://im03.thewallpapers.org//wallpapers/27/2767/thumb/fb_600_2-new_york_skyline.png');
-  background-size: cover;
 }
 
 #thumb_paris{
   background-image: url('http://www.hdfbcover.com/randomcovers/covers/Eiffel-tower-paris-france-fb-cover-photo.jpg');
-  background-size: cover;
 }
 
 #thumb_san_fransisco{
   background-image: url('http://www.sleekcover.com/covers/san-francisco-facebook-cover.jpg');
-  background-size: cover;
 }
 
 #thumb_shanghai{
   background-image: url('http://www.hollywoodreporter.com/sites/default/files/imagecache/675x380/2015/06/ap874486066616.jpg');
-  background-size: cover;
 }
 
 .thumb_pic{

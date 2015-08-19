@@ -12,15 +12,7 @@ This page will include:
 <html>
 <head>
   <% include ../partials/head %>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <link rel="stylesheet" type="text/css" href=" /stylesheets/style.css">
-  <script src="/script/javascript.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!-- Latest compiled and minified CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-<!-- CSS for this page starts here -->
+
 <style type="text/css">
 
 body {
@@ -29,7 +21,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: #faebd7;
-
 }
 
 h1 {
@@ -73,16 +64,23 @@ h3 {
 <body>
   <% include ../partials/user_show_nav.ejs %>
   <h1 class="text-center"><%= user.name %>'s Profile</h1>
-  <div class="container">
-    <div class="col-sm-5">
-      <button type="button" class="btn btn-primary btn-lg">Edit My Profile</button></br>
-    </div>
-    <div class="col-sm-5">
-  <!-- This will populate user's saved cities -->
-      <h3 class="pull-right">My Cities</h3>
 
-    </div>
+</div>
+  <!-- This will populate user's saved cities -->
+      <h3 id="my_cities" class="text-center">My Cities</h3>
+
+
+
+
+<% if (user.location) { %>
+  <% user.location.forEach(function(location){ %>
+  <div id="thumbs_small">
+  <a href="/locations/<%= location.id %>" >
+    <img src="<%= location.image_uri %> ">
+  </a>
   </div>
+  <% }) %>
+  <% } %>
 
 </body>
 </html>
