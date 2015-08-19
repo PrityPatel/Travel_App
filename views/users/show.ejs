@@ -15,27 +15,23 @@ This page will include:
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
-
-
+  <!-- <link rel="stylesheet" href="stylesheets/style.css"> -->
+  <link rel="stylesheet" type="text/css" href=" /stylesheets/style.css">
   <script src="/script/javascript.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+<!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
   <style type="text/css">
-
   body {
-    background-image:url(http://i764.photobucket.com/albums/xx286/lightsatnight/night-time-cities-01.jpg);
+    background-image:url(http://a.fastcompany.net/multisite_files/fastcompany/poster/2013/11/3021592-poster-1280-cities.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     color: #faebd7;
   }
   h1 {
-    font-size: 60px;
+    font-size: 70px;
   }
-  h3 {
-    margin-top: 0;
-  }
-  #footer {
+  .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -43,15 +39,10 @@ This page will include:
     color: #000;
 
   }
-  .container1 {
-    float: left;
+  .container {
     margin: 0;
     padding: 0;
   }
-  .container2{
-
-  }
-
   .col-sm-5 {
     padding-left: 40px;
     padding-top: 70px;
@@ -60,34 +51,28 @@ This page will include:
     width: 250px;
     float: left;
   }
+  .btn {
+    margin-top: 0;
+  }
+  h3 {
+    color: #A9A9A9;
+  }
 
   </style>
 </head>
 <body>
   <% include ../partials/user_show_nav.ejs %>
-
   <h1 class="text-center"><%=user.name%>'s Profile</h1>
-  <div class="container1">
+  <div class="container">
     <div class="col-sm-5">
      <!--  <a href="../locations">
         <button type="button" class="btn btn-primary btn-lg">Browse Cities</button>
       </a> -->
-
-      <p>
-        <a href="../locations/show">
-        <button type="button" class="btn btn-primary btn-lg">Browse Cities</button>
-        </a>
-      </p>
-      <p>
-        <button type="button" class="btn btn-primary btn-lg">Edit My Profile</button>
-      </p>
+      </br>
+      <button type="button" class="btn btn-primary btn-lg">Edit My Profile</button></br>
     </div>
-  </div>
-  <div class="container2">
     <div class="col-sm-5">
-
       <h3 class="pull-right">My Cities</h3>
-
 
     </div>
   </div>
