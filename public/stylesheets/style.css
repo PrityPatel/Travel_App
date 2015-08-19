@@ -10,7 +10,13 @@ body {
     padding: 50px;
     background-size: 100%;
     background-repeat: no-repeat;
-    font-family: 'Bangers', cursive;
+    /*font-family: 'Bangers', cursive;*/
+    /*font-family: 'Shadows Into Light', cursive;*/
+    /*font-family: 'Fjalla One', sans-serif;*/
+    /*font-family: 'Sigmar One', cursive;*/
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Lobster', cursive;
+    /*font-family: 'Rock Salt', cursive;*/
     background-color: black;
 }
 
@@ -68,7 +74,8 @@ body {
 
 .city_name{
   color: white;
-  font-size: 30px;
+  font-size: 50px;
+  text-shadow: 4px 2px black;
 }
 
 .city_thumbs{
@@ -239,9 +246,45 @@ td{
   z-index: -1;
   float: left;
   margin-bottom: 20px;
-  width: 900px;
+  width: 100%;
+  background-color: black;
+  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 300px;
+  border-radius: 15px;
+  border: 5px solid black;
 }
 
+#thumb_london{
+  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/amznlcl/onsite/regionimages/UKLondon_Fotolia_53327501_Subscription_XL_657x230._CB333190876_.jpg');
+  background-size: cover;
+}
+
+#thumb_mumbai{
+  background-image: url('http://i.huffpost.com/gen/1824143/images/o-MUMBAI-facebook.jpg');
+  background-size: cover;
+}
+
+#thumb_new_york{
+  background-image: url('http://im03.thewallpapers.org//wallpapers/27/2767/thumb/fb_600_2-new_york_skyline.png');
+  background-size: cover;
+}
+
+#thumb_paris{
+  background-image: url('http://www.hdfbcover.com/randomcovers/covers/Eiffel-tower-paris-france-fb-cover-photo.jpg');
+  background-size: cover;
+}
+
+#thumb_san_fransisco{
+  background-image: url('http://www.sleekcover.com/covers/san-francisco-facebook-cover.jpg');
+  background-size: cover;
+}
+
+#thumb_shanghai{
+  background-image: url('http://www.hollywoodreporter.com/sites/default/files/imagecache/675x380/2015/06/ap874486066616.jpg');
+  background-size: cover;
+}
 
 .thumb_pic{
   width: 150px;
@@ -292,5 +335,9 @@ float: left;
 
 ul{
   list-style-type: none;
+}
+
+#upper{
+  margin: 30px;
 }
 

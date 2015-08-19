@@ -21,65 +21,82 @@ body{
 
 <!-- THIS PAGE DOES RENDER, BUT NEEDS TO BE STYLED -->
 
+<div id="upper"></div>
 
 <ul id="location_index_ul">
 
-  <li class="city" ><a class="city_name" href="/locations/728021537">London</a></li>
-<div class="thumbs">
-    <div class="thumb"><img class="thumb_pic" src="http://media-cache-ec0.pinimg.com/736x/8b/48/8c/8b488c9e93a79aa9ce74124fdd4f1cd2.jpg" onclick="window.open(this.src)" />    <button type="button" class="btn btn-xs btn-default">save this pic</button>
-</div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <br>
-</div>
-<br />
-  <li class="city"><a class="city_name"  href="/locations/35932492">New York</a></li>
-  <br />
-  <div class="thumbs">
-    <li><div class="thumb"><img class="thumb_pic" src="http://affordableartfair.com/newyork/files/2013/08/newyorkcity.jpg" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><img class="thumb_pic" src="http://brekend.nl/wp-content/uploads/2011/12/newyork21.jpg" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0_nerpAaMLFKwQ0s-SCkvU88wx1UCD_zyHS0cbJtwlceskqw3CA" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><img class="thumb_pic" src="http://41.media.tumblr.com/tumblr_mdr0kfX7Kp1r1thfzo7_r1_1280.jpg" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQT0fsn82RTB8wNya8uzXpfPBWCH-Eln70KJd8JX1vnx9U9nmLG" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div></li>
+
+<a href="/locations/728021537">
+  <div class="thumbs" id="thumb_london">
+    <li class="city" ><p class="city_name">London</p></li>
+
+      <<!-- div class="thumb"><img class="thumb_pic" src="http://media-cache-ec0.pinimg.com/736x/8b/48/8c/8b488c9e93a79aa9ce74124fdd4f1cd2.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button>
   </div>
-  <li class="city" ><a class="city_name"  href="/locations/301343440">Paris</a></li>
-  <div class="thumbs">
-    <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNuILQdoKfAw4-azPBL_u5VzRQQicPi0y0g6t7aZY286CfdBV" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+      <div class="thumb"><img class="thumb_pic" src="http://www.reineog.com/wp-content/uploads/2012/08/Quintessentially-London.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+      <div class="thumb"><img class="thumb_pic" src="http://40.media.tumblr.com/11a277ad51c441f195ace2edb6043dcc/tumblr_mghcphn4Wu1r1thfzo4_1280.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+      <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHzkXpvDMUTeCy3X6z20MCKsJ2bayv3tJcGV0MsP2F6DtZ6tOD"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+      <div class="thumb"><img class="thumb_pic" src="http://i.dailymail.co.uk/i/pix/2012/12/13/article-2247513-167E3E61000005DC-575_634x634.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div> -->
   </div>
-  <li class="city" ><a class="city_name"  href="167346217">San Fransisco</a></li>
-  <div class="thumbs">
-    <div class="thumb"><img class="thumb_pic" src="https://mjazmin.files.wordpress.com/2013/03/img_1155.jpg" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+</a>
+
+<a href="/locations/35932492">
+    <div class="thumbs" id="thumb_new_york">
+      <li class="city"><p class="city_name">New York</p></li>
+     <!--  <li><div class="thumb"><img class="thumb_pic" src="http://affordableartfair.com/newyork/files/2013/08/newyorkcity.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+      <div class="thumb"><img class="thumb_pic" src="http://brekend.nl/wp-content/uploads/2011/12/newyork21.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+      <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0_nerpAaMLFKwQ0s-SCkvU88wx1UCD_zyHS0cbJtwlceskqw3CA"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+      <div class="thumb"><img class="thumb_pic" src="http://41.media.tumblr.com/tumblr_mdr0kfX7Kp1r1thfzo7_r1_1280.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+      <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQT0fsn82RTB8wNya8uzXpfPBWCH-Eln70KJd8JX1vnx9U9nmLG"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div></li> -->
   </div>
-  <li class="city" ><a class="city_name"  href="/locations/213193384">Shanghai</a></li>
-  <div class="thumbs">
-    <div class="thumb"><img class="thumb_pic" src="https://s-media-cache-ak0.pinimg.com/236x/91/b6/cd/91b6cdc28b7b335e574e50aa62b8ea60.jpg" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+</a>
+
+<a href="/locations/301343440">
+  <div class="thumbs" id="thumb_paris">
+   <li class="city" ><p class="city_name">Paris</p></li>
+    <!--     <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNuILQdoKfAw4-azPBL_u5VzRQQicPi0y0g6t7aZY286CfdBV"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="http://rollingout.com/wp-content/uploads/2014/02/Paris-France-Instagram-6.jpg?769134"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUacO-RuwYS5B_Z2wrFKL2VucBHhFoBiJ7BWrsMIJb4gNbfEu72Q"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="http://2.bp.blogspot.com/-RBYG-V_j25Y/UTfjN8QYjNI/AAAAAAAAFBM/a7ZlcKuTuw8/s1600/Picture+20.png"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="http://media.tumblr.com/tumblr_m35jygEefq1qm4rc3.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div> -->
   </div>
-  <li class="city" ><a class="city_name"  href="/locations/523722982">Mumbai</a></li>
-  <div class="thumbs">
-    <div class="thumb"><img class="thumb_pic" src="http://farm8.static.flickr.com/7226/7206375998_cf1b28beaf_m.jpg" onclick="window.open(this.src)" /><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
-    <div class="thumb"><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+</a>
+
+<a href="/locations/167346217">
+  <div class="thumbs" id="thumb_san_fransisco">
+   <li class="city" ><p class="city_name">San Fransisco</p></li>
+    <!--     <div class="thumb"><img class="thumb_pic" src="https://mjazmin.files.wordpress.com/2013/03/img_1155.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="http://www.pixoto.com/images-photography/instagram-and-mobile/iphone/trams-of-san-francisco--38986653.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT33BBnl9wawI9KKnhI-2mEHF40GtdPoSWVF-tART2a3BCFhQmnaA"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="https://s-media-cache-ak0.pinimg.com/236x/1c/5e/d0/1c5ed04cd8b8aebfedfb629a51a7ffc0.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVl0yg2ZMlVDX7XwqF6DpzQJW7eQdmGygxHZL9yFg6rb2752TfWg" class="btn btn-xs btn-default">save this pic</button></div> -->
   </div>
+</a>
+
+<a href="/locations/213193384">
+  <div class="thumbs" id="thumb_shanghai">
+   <li class="city" ><p class="city_name">Shanghai</p></li>
+    <!--    <div class="thumb"><img class="thumb_pic" src="https://s-media-cache-ak0.pinimg.com/236x/91/b6/cd/91b6cdc28b7b335e574e50aa62b8ea60.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="http://www.thepolarroute.com/wp-content/uploads/2013/01/01shanghai.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnb6x8gwZJRsu3W-QScvW6UFQDxfM5VIDdOZRcoat0qCP-UlLD6w"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="http://1vze7o2h8a2b2tyahl3i0t68.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/photo-e1405613297844.png"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e15/11266423_101437773537214_484127583_n.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div> -->
+  </div>
+  </a>
+
+<a href="/locations/523722982" title="">
+  <div class="thumbs" id="thumb_mumbai" >
+   <li class="city" ><p class="city_name">Mumbai</p></li>
+    <!-- <div class="thumb"><img class="thumb_pic" src="http://farm8.static.flickr.com/7226/7206375998_cf1b28beaf_m.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_40O9lb6jQtdjUHnUwcjoRKj-Jpscnyd4MBvBsvQfzp-j-vOA"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="http://photos.uncorneredmarket.com/Asia/India/Mumbai-Photos/i-JDCxCVD/0/M/8990823310_8bedb9a34e_o-M.jpg"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXIX5-3Xl6jSmBrElUq0aM4PTIzS2NmaYkJHMl1KyTyj6OMGNaIQ"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div>
+    <div class="thumb"><img class="thumb_pic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFmAGT1eZTStQlmSFFIXZKh4OVsMpMEtnMLMlUJj2h0hhcZ2IV3w"/><button type="button" class="btn btn-xs btn-default">save this pic</button></div> -->
+  </div>
+  </a>
 </ul>
 
 
-<div id="bottom"></div>
+<!-- <div id="bottom"></div> -->
 
 
 </body>
