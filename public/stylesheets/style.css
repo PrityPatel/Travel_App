@@ -14,8 +14,8 @@ body {
     /*font-family: 'Shadows Into Light', cursive;*/
     /*font-family: 'Fjalla One', sans-serif;*/
     /*font-family: 'Sigmar One', cursive;*/
-    font-family: 'Pacifico', cursive;
-    /*font-family: 'Lobster', cursive;*/
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Lobster', cursive;
     /*font-family: 'Rock Salt', cursive;*/
     background-color: black;
 }
@@ -103,6 +103,7 @@ body {
     width: 200px;
     height: 30px;
     font-size: 20px;
+    color: black;
 }
 
 #droplist_city{
@@ -162,6 +163,10 @@ li{
 /*.login_form{
     color: rgba(255,255,255, 0.8);
 }*/
+
+#my_cities{
+  color: black;
+}
 
 #my_list_button{
     position: absolute;
