@@ -36,18 +36,44 @@ var show = function(req, res, next) {
 };
 
 //Edit User Profile
-var editUser = function(req, res, next){
-  if (error) res.json({message: 'Could not find User because: ' + error});
+// var editUser = function(req, res, next){
+//   if (error) res.json({message: 'Could not find User because: ' + error});
 
-  if (req.body.username) user.username = req.body.username;
-  if (req.body.name) user.name = req.body.name;
-  if (req.body.email) user.email = req.body.email;
-  if (req.body.password) user.password= req.body.password;
+//   if (req.body.username) user.username = req.body.username;
+//   if (req.body.name) user.name = req.body.name;
+//   if (req.body.email) user.email = req.body.email;
+//   if (req.body.password) user.password= req.body.password;
 
-  user.save(function(error) {
-    if (error) res.json({message: 'User Profile Updated!'});
+//   user.save(function(error) {
+//     if (error) res.json({message: 'User Profile Updated!'});
+//   });
+// };
+
+//Edit User Profile
+// GET '/users/:id/edit'
+function userEdit (req, res) {
+  User.findById(req.params.id, function(err, formUser) {
+    if(err) res.json({message: 'Could not find user because:' + err});
+      res.render('users/edit', {formUser: formUser, user: req.user});
+    });
   });
-};
+}
+
+// PUT '/users/:id'
+function userUpdate (req, res, next) {
+  User.findById(req.params.id, function(err, user) {
+    if(err) res.json({message: 'Could not find user because:' + err});
+    if(req.body.name) user.name = req.body.name;
+    if (req.body.username) user.username = req.body.username;
+    if (req.body.email) user.email = req.body.email;
+    if (req.body.password) user.password= req.body.password;
+
+    user.save(function(err) {
+      if(err) res.json({messsage: 'Could not update user because:' + err});
+      res.redirect('/users/show', {user: user});
+    });
+  });
+}
 
 
 
@@ -57,7 +83,7 @@ var removeUser = function(req, res, next){
   User.remove({_id: id}, function(error){
     if (error) res.json({message: 'Could not delete User: ' + error});
 
-  res.json({message: 'User Deleted!'});
+  res.redirect('/')
 });
 };
 
@@ -65,6 +91,7 @@ module.exports = {
   newUser:  newUser,
   create:   create,
   show:     show,
-  editUser: editUser,
+  userEdit: userEdit,
+  userUpdate: userUpdate,
   removeUser:   removeUser
 };
