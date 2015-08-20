@@ -1,4 +1,4 @@
-// require('dotenv').load();
+require('dotenv').load();
 var request = require('request');
 var baseURL = "https://api.instagram.com/v1/locations/";
 var clientID = process.env.INSTAGRAM_CLIENT_ID;
