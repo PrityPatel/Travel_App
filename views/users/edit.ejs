@@ -18,16 +18,20 @@ body {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
   <link rel="stylesheet" type="text/css" href=" /stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href=" /stylesheets/user_style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script>
 </head>
 <body>
 
 <h1>Edit Profile</h1>
 <div class="container">
-  <form>
+  <form method="POST" action="/users/<%= user.id %>?_method=PUT">
 <!-- name -->
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="name" class="form-control" id="name" placeholder="<%= user.name %>">
+      <input type="text" class="form-control" id="name" placeholder="<%= user.name %>" value="<%= user.name %>">
     </div>
 <!-- e-mail -->
     <div class="form-group">
@@ -50,9 +54,9 @@ body {
       <input type="password" class="form-control" id="password" placeholder="Repeat new password">
     </div>
 <!-- submit button -->
-<p><button class="btn btn-success" type="button">Submit</button></p>
+<p><button class="btn btn-success" type="submit" name="action">Submit</button></p>
 <!-- delete -->
-<p><button class="btn btn-danger" type="button">Delete Profile</button></p>
+<p><button class="btn btn-danger" type="delete" name="action">Delete Profile</button></p>
   </form>
 </div>
 </body>
