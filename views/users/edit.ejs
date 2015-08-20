@@ -19,42 +19,37 @@ body {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
   <link rel="stylesheet" type="text/css" href=" /stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href=" /stylesheets/user_style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script>
 </head>
 <body>
 
 <h1>Edit Profile</h1>
 <div class="container">
-  <form>
+  <form method="POST" action="/users/<%= user.id %>?_method=PUT">
 <!-- name -->
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="name" class="form-control" id="name" placeholder="<%= user.name %>">
+      <input type="text" name="name" class="form-control" id="name" placeholder="<%= user.name %>" value="<%= user.name %>">
     </div>
 <!-- e-mail -->
     <div class="form-group">
       <label for="name">E-mail</label>
-      <input type="email" class="form-control" id="email" placeholder="<%= user.username %>">
+      <input type="email" name="username" class="form-control" id="email" placeholder="<%= user.username %>" value="<%= user.username %>">
     </div>
-<!-- old password -->
-    <div class="form-group">
-      <label for="name">Old Password</label>
-      <input type="password" class="form-control" id="password" placeholder="Old password">
-    </div>
-<!-- new password -->
-    <div class="form-group">
-      <label for="name">New Password</label>
-      <input type="password" class="form-control" id="password" placeholder="New password">
-    </div>
-<!-- repeat new password-->
-    <div class="form-group">
-      <label for="name">Retype New Password</label>
-      <input type="password" class="form-control" id="password" placeholder="Repeat new password">
-    </div>
+
 <!-- submit button -->
-<p><button class="btn btn-success" type="button">Submit</button></p>
+<p><button class="btn btn-success" type="submit" name="action">Submit</button></p>
+</form>
 <!-- delete -->
-<p><button class="btn btn-danger" type="button">Delete Profile</button></p>
+<p>
+  <form action="/users/<%= user.id%>?_method=DELETE" method="POST">
+    <button class="btn btn-danger" type="submit">Delete Profile</button>
   </form>
+</p>
+
 </div>
 </body>
 </html>
