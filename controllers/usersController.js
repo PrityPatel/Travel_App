@@ -68,7 +68,7 @@ function updateUser (req, res, next) {
 
     user.save(function(err) {
       if(err) res.json({messsage: 'Could not update user because:' + err});
-      res.redirect('/users/show', {user: user});
+      res.redirect('/users/' + req.params.id );
     });
   });
 }
