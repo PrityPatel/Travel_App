@@ -235,16 +235,6 @@ li{
     left: 0;
 }
 
-/*#show_back{
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    position: fixed;
-    background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHZotlKE5bblkC-uNdooNQiqbYkKFaSkKaaNFTnzzx8BFeQV6JTA');
-    left: 0;
-    top: 0;
-}*/
-
 .siteName{
     font-size: 70px;
     position: relative;
@@ -261,15 +251,9 @@ li{
     color: rgba(255,255,255, 0.8);
 }
 
-
-
 table{
     width: 300px;
 }
-
-/*tbody{
-    text-align: center;
-}*/
 
 td{
     font-size: 20px;
