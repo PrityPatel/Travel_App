@@ -65,7 +65,7 @@ router.post('/register', usersController.create);
 router.get('/users/:id', usersController.show);
 //Update user
 router.get('/users/:id/edit', usersController.editUser);
-router.put('/users/:id', usersController.editUser);
+router.put('/users/:id', usersController.updateUser);
 //Delete user
 router.delete('/users/:id', usersController.removeUser);
 

@@ -51,7 +51,7 @@ var show = function(req, res, next) {
 
 //Edit User Profile
 // GET '/users/:id/edit'
-function userEdit (req, res) {
+function editUser (req, res) {
   User.findById(req.params.id, function(err, user) {
     if(err) res.json({message: 'Could not find user because:' + err});
       res.render('users/edit', {user: req.user});
@@ -59,7 +59,7 @@ function userEdit (req, res) {
   }
 
 // PUT '/users/:id'
-function userUpdate (req, res, next) {
+function updateUser (req, res, next) {
   User.findById(req.params.id, function(err, user) {
     if(err) res.json({message: 'Could not find user because:' + err});
     if(req.body.name) user.name = req.body.name;
@@ -82,7 +82,7 @@ var removeUser = function(req, res, next){
   User.remove({_id: id}, function(error){
     if (error) res.json({message: 'Could not delete User: ' + error});
 
-  res.redirect('/')
+  res.redirect('/');
 });
 };
 
@@ -90,7 +90,7 @@ module.exports = {
   newUser:  newUser,
   create:   create,
   show:     show,
-  userEdit: userEdit,
-  userUpdate: userUpdate,
+  editUser: editUser,
+  updateUser: updateUser,
   removeUser:   removeUser
 };
