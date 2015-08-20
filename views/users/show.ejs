@@ -1,28 +1,18 @@
-<!-- This is the view of the user's profile page.
-
-This page will include:
-
--locations saved by user
--the option to browse locations
--the option to edit their profile
--the option to delete their profile
--the option to log out -->
-
 <!DOCTYPE html>
 <html>
 <head>
   <% include ../partials/head %>
+
   <link rel="stylesheet" type="text/css" href=" /stylesheets/user_style.css">
+
 </head>
 <body>
-  <% include ../partials/user_show_nav.ejs %>
+  <% include ../partials/nav.ejs %>
   <h1 class="text-center"><%= user.name %>'s Profile</h1>
 
 </div>
   <!-- This will populate user's saved cities -->
       <h3 id="my_cities" class="text-center">My Cities</h3>
-
-
 
 
 <% if (user.location) { %>

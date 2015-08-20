@@ -43,7 +43,7 @@ var loadCurrentUser = function(req, res, next) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('welcome_page', { title: 'Welcome' });
+  res.render('welcome_page', { title: 'Welcome', user: req.user });
 });
 
 //register new and save new user (listed under User CRUD)

@@ -15,12 +15,7 @@ body{
 
 </head>
 <body>
-  <% include ../partials/logout_nav %>
-
-
-<!-- code to enlarge image in new window -->
-<!-- <img src="http://www.fly4wonders.com/wp-content/uploads/2014/05/bg_main.jpg" onclick="window.open(this.src)" /> -->
-
+  <% include ../partials/nav %>
 
 <p class="siteName_city"><%= location %></p>
 
@@ -44,35 +39,9 @@ body{
 
     <p id="city_name"></p>
     <table>
-      <caption id="city_expense">Living Expenses for city_id</caption>
-      <thead>
-        <tr>
+      <caption id="city_expense">Living Expenses for <%= location %></caption>
 
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Hotel</td>
-          <td>$$$</td>
-        </tr>
-        <tr>
-          <td>Subway</td>
-          <td>$$$</td>
-        </tr>
-        <tr>
-          <td>Dinner</td>
-          <td>$$$</td>
-        </tr>
-        <tr>
-          <td>Taxi</td>
-          <td>$$$</td>
-        </tr>
-        <tr>
-          <td>Daily Costs</td>
-          <td>$$$</td>
-        </tr>
-      </tbody>
-    </table>
+
 
 
 
