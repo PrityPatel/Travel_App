@@ -1,5 +1,3 @@
-# dotenv
-.env
 
 # Logs
 logs
@@ -33,3 +31,5 @@ node_modules
 npm-debug.log
 
 
+.gitignore
+.env
