@@ -79,19 +79,24 @@ body {
 }
 
 .city_thumbs{
-    width: 420px;
+    width: 525px;
     display: inline-block;
     position: absolute;
-    top: 120px;
+    top: 150px;
     margin-bottom: 250px;
 }
 
 #costs{
     color: white;
     position: absolute;
-    right: 200px;
+    right: 100px;
     display: inline-block;
-    top: 170px;
+    top: 180px;
+    background-color: rgba(0,0,0, 0.3);
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid rgba(0,0,0,0.5);
+    /*box-shadow: 10px 10px 5px rgba(0,0,0,0.5);*/
 }
 
 .droplist{
@@ -100,6 +105,10 @@ body {
     display: inline;
     position: absolute;
     left: 400px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    color: black;
 }
 
 #droplist_city{
@@ -160,10 +169,15 @@ li{
     color: rgba(255,255,255, 0.8);
 }*/
 
+#my_cities{
+  color: black;
+}
+
 #my_list_button{
     position: absolute;
-    top: 140px;
-    left: 440px;
+    top: 100px;
+    right: 140px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
 .navynav{
@@ -173,6 +187,19 @@ li{
     background-color: rgba(255,255,255, 0.7);
     position: fixed;
     z-index: 3;
+}
+
+#off_canvas_drop{
+  position: absolute;
+  right: 14px;
+  top: 7px;
+  visibility: hidden;
+  height: 40px;
+  color: black;
+}
+
+.panel{
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
 }
 
 .pic{
@@ -228,6 +255,8 @@ li{
     color: rgba(255,255,255, 0.8);
 }
 
+
+
 table{
     width: 300px;
 }
@@ -254,36 +283,41 @@ td{
   height: 300px;
   border-radius: 15px;
   border: 5px solid black;
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+.thumbs_small{
+  background-color: black;
+  width: 200px;
+  height: 100px;
+}
+
+#thumb_london, #thumb_mumbai, #thumb_new_york, #thumb_paris, #thumb_san_fransisco, #thumb_shanghai{
+  background-size: cover;
 }
 
 #thumb_london{
   background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/amznlcl/onsite/regionimages/UKLondon_Fotolia_53327501_Subscription_XL_657x230._CB333190876_.jpg');
-  background-size: cover;
 }
 
 #thumb_mumbai{
   background-image: url('http://i.huffpost.com/gen/1824143/images/o-MUMBAI-facebook.jpg');
-  background-size: cover;
 }
 
 #thumb_new_york{
   background-image: url('http://im03.thewallpapers.org//wallpapers/27/2767/thumb/fb_600_2-new_york_skyline.png');
-  background-size: cover;
 }
 
 #thumb_paris{
   background-image: url('http://www.hdfbcover.com/randomcovers/covers/Eiffel-tower-paris-france-fb-cover-photo.jpg');
-  background-size: cover;
 }
 
 #thumb_san_fransisco{
   background-image: url('http://www.sleekcover.com/covers/san-francisco-facebook-cover.jpg');
-  background-size: cover;
 }
 
 #thumb_shanghai{
   background-image: url('http://www.hollywoodreporter.com/sites/default/files/imagecache/675x380/2015/06/ap874486066616.jpg');
-  background-size: cover;
 }
 
 .thumb_pic{
@@ -299,6 +333,7 @@ td{
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.5);
 }
 
 .thumb_pic:hover{
@@ -314,6 +349,7 @@ td{
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  box-shadow: 30px 30px 20px rgba(0,0,0,0.5);
 }
 
 #title{
@@ -339,5 +375,11 @@ ul{
 
 #upper{
   margin: 30px;
+}
+
+@media (max-width: 767px) {
+#off_canvas_drop{
+  visibility: visible;
+}
 }
 

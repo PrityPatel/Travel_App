@@ -9,6 +9,7 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var flash = require('connect-flash');
+
 var routes = require('./routes/index');
 
 var app = express();
@@ -54,6 +55,7 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+// request methods for the Instagram API
 require('./api/instagram');
 
 // error handlers
