@@ -188,6 +188,11 @@ li{
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
+#name, #email, #password{
+  width: 300px;
+  max-width: 100%;
+}
+
 .navynav{
     top: 0px;
     left: 0px;
