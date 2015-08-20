@@ -189,6 +189,15 @@ li{
     z-index: 3;
 }
 
+#off_canvas_drop{
+  position: absolute;
+  right: 14px;
+  top: 7px;
+  visibility: hidden;
+  height: 40px;
+  color: black;
+}
+
 .panel{
   box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
 }
@@ -245,6 +254,8 @@ li{
     text-align: center;
     color: rgba(255,255,255, 0.8);
 }
+
+
 
 table{
     width: 300px;
@@ -364,5 +375,11 @@ ul{
 
 #upper{
   margin: 30px;
+}
+
+@media (max-width: 767px) {
+#off_canvas_drop{
+  visibility: visible;
+}
 }
 

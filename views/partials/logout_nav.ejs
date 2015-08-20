@@ -15,15 +15,25 @@
     <form class="navbar-form navbar-right" role="search">
 
 <div>
-  <select class="droplist" onChange="window.location.href=this.value">
-    <option selected disabled>Choose a City</option>
-    <option value="/locations/728021537">London</option>
-    <option value="/locations/35932492">New York</option>
-    <option value="/locations/213193384">Shanghai</option>
-    <option value="/locations/301343440">Paris</option>
-    <option value="/locations/167346217">San Fransisco</option>
-    <option value="/locations/523722982">Mumbai</option>
+<select class="droplist dropdown_user" onChange="window.location.href=this.value">
+  <option selected disabled>Choose a City</option>
+  <option value="/locations/728021537">London</option>
+  <option value="/locations/523722982">Mumbai</option>
+  <option value="/locations/35932492">New York</option>
+  <option value="/locations/301343440">Paris</option>
+  <option value="/locations/167346217">San Fransisco</option>
+  <option value="/locations/213193384">Shanghai</option>
+</select>
+
+  <select  id="off_canvas_drop" onChange="window.location.href=this.value">
+    <option selected disabled>Menu</option>
+    <option value="/locations/">Browse Cities</option>
+    <option value="/users/show">My Profile</option>
+    <option value="/login">Login</option>
+    <option value="/register">Register</option>
+    <option value="/logout">Logout</option>
   </select>
+  </div>
 
 </div>
 
