@@ -51,7 +51,7 @@ var show = function(req, res, next) {
   var numbeoData, locationName;
   if (req.params.id == "728021537") locationName = "London";
   if (req.params.id == "523722982") locationName = "Mumbai";
-  if (req.params.id == "35932492") locationName = "New+York";
+  if (req.params.id == "35932492") locationName = "Manhattan";
   if (req.params.id == "301343440") locationName = "Paris";
   if (req.params.id == "167346217") locationName = "San+Francisco";
   if (req.params.id == "213193384") locationName = "Shanghai";
