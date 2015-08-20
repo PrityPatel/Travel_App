@@ -62,12 +62,12 @@ router.get( '/logout', sessionsController.destroy);
 router.get( '/register', usersController.newUser);
 router.post('/register', usersController.create);
 //Read user
-router.get('/users/:id', usersController.show);
+router.get('/users/:id', isLoggedIn, loadCurrentUser, usersController.show);
 //Update user
-router.get('/users/:id/edit', usersController.editUser);
-router.put('/users/:id', usersController.updateUser);
+router.get('/users/:id/edit', isLoggedIn, loadCurrentUser, usersController.editUser);
+router.put('/users/:id', isLoggedIn, loadCurrentUser, usersController.updateUser);
 //Delete user
-router.delete('/users/:id', usersController.removeUser);
+router.delete('/users/:id', isLoggedIn, loadCurrentUser, usersController.removeUser);
 
 
 //Location resource; need to write route to delete location from user profile
