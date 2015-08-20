@@ -31,28 +31,14 @@ body {
 <!-- name -->
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" placeholder="<%= user.name %>" value="<%= user.name %>">
+      <input type="text" name="name" class="form-control" id="name" placeholder="<%= user.name %>" value="<%= user.name %>">
     </div>
 <!-- e-mail -->
     <div class="form-group">
       <label for="name">E-mail</label>
-      <input type="email" class="form-control" id="email" placeholder="<%= user.username %>">
+      <input type="email" name="username" class="form-control" id="email" placeholder="<%= user.username %>" value="<%= user.username %>">
     </div>
-<!-- old password -->
-    <div class="form-group">
-      <label for="name">Old Password</label>
-      <input type="password" class="form-control" id="password" placeholder="Old password">
-    </div>
-<!-- new password -->
-    <div class="form-group">
-      <label for="name">New Password</label>
-      <input type="password" class="form-control" id="password" placeholder="New password">
-    </div>
-<!-- repeat new password-->
-    <div class="form-group">
-      <label for="name">Retype New Password</label>
-      <input type="password" class="form-control" id="password" placeholder="Repeat new password">
-    </div>
+
 <!-- submit button -->
 <p><button class="btn btn-success" type="submit" name="action">Submit</button></p>
 <!-- delete -->
