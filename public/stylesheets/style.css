@@ -42,18 +42,6 @@ body {
     left: 205px;
 }
 
-/*.cd-user-modal {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s 0, visibility 0 0.3s;
-}
-
-.cd-user-modal.is-visible {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.3s 0, visibility 0 0;
-}*/
-
 .city{
   text-align: center;
   font-size: 20px;
@@ -83,7 +71,8 @@ body {
 }
 
 .city_thumbs{
-    width: 525px;
+    /*width: 525px;*/
+    width: 60%;
     display: inline-block;
     position: absolute;
     top: 150px;
@@ -136,6 +125,11 @@ body {
     botton: 0px;
     text-align: center;
     position: relative;
+}
+
+.form{
+  width: 40%;
+  margin: 0 auto;
 }
 
 h1{
@@ -386,8 +380,63 @@ ul{
 }
 
 @media (max-width: 767px) {
+
+.city_name{
+  font-size: 30px;
+}
+
+#costs{
+  display: block;
+  bottom: 100px;
+  position: relative;
+  left: 20px;
+  margin-bottom: 100px;
+}
+
+.city_thumbs{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#city_expense{
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
+  bottom: -5px;
+}
+
+.form{
+  width: 80%;
+}
+
+#my_list_button{
+  left: 20px;
+  text-align: center;
+  position: relative;
+}
+
 #off_canvas_drop{
   visibility: visible;
 }
+
+.siteName{
+  font-size: 50px;
+}
+
+.siteName_city{
+  left: 20px;
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.thumbs{
+  height: 40%;
+}
+
+.user_name{
+  font-size: 40px;
+}
+
 }
 
