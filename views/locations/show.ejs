@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
   <% include ../partials/head %>
@@ -10,37 +9,36 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
 </style>
 
 </head>
 <body>
   <% include ../partials/nav %>
 
-<p class="siteName_city"><%= location %></p>
+  <p class="siteName_city"><%= location %></p>
 
-<button id="my_list_button" type="button" ">Add this City to my List</button>
+  <button id="my_list_button" type="button" ">Add this City to my List</button>
 
 
-<div class="city_thumbs">
-    <p id="instagram_pics">Instagram Pics</p>
+  <div class="city_thumbs">
+      <p id="instagram_pics">Instagram Pics</p>
 
-    <% instagramData.forEach(function(photo){ %>
+      <% instagramData.forEach(function(photo){ %>
 
-    <div class="thumb"><img class="thumb_pic" src="<%= photo %>" onclick="window.open(this.src)" />
+      <div class="thumb"><img class="thumb_pic" src="<%= photo %>" onclick="window.open(this.src)" />
 
-   </div>
+     </div>
 
-    <% });%>
+      <% });%>
 
-</div>
+  </div>
 
-<div id="costs">
-    <p id="city_name"></p>
-    <table>
-      <caption id="city_expense">Living Expenses for <%= location %></caption>
+  <div id="costs">
+      <p id="city_name"></p>
+      <table>
+        <caption id="city_expense">Living Expenses for <%= location %></caption>
 
-</div>
+  </div>
 
 </body>
 </html>
