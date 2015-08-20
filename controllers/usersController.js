@@ -5,7 +5,7 @@ var User = require('../models/User');
 
 // Get the new user form
 var newUser = function(req, res, next) {
-  res.render('auth/register');
+  res.render('auth/register', {user: req.user});
 };
 
 //Post and save the data from the new user form
@@ -63,8 +63,7 @@ function updateUser (req, res, next) {
   User.findById(req.params.id, function(err, user) {
     if(err) res.json({message: 'Could not find user because:' + err});
     if(req.body.name) user.name = req.body.name;
-    if (req.body.username) user.username = req.body.username;
-    if (req.body.email) user.email = req.body.email;
+    if (req.body.email) user.username = req.body.email;
     if (req.body.password) user.password= req.body.password;
 
     user.save(function(err) {
