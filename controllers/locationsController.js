@@ -1,49 +1,52 @@
+// Source in Location model
 var Location = require('../models/Location');
+var async = require('async');
+
+// Source in http request methods for the Instagram API
 var instagram = require('../api/instagram');
 var numbeo = require('../api/numbeo');
 
-//this will render ALL locations
+// Renders the locations index page
 var index = function(req, res, next) {
-  Location
-    .find({})
-    .then(
-      function(locations) {
-        res.render(
-          'locations/index',
-          {
-            location: locations,
-            user:     req.user
-        });
-      }, function(err) {
-        return next(err);
-    });
+
+    res.render('locations/index', { user: req.user, });
 };
 
-
+// Saves a location to the user's list of favorite locations
 var create = function(req, res){
-  var newLocation = req.body.location;
-  newLocation.username = req.user.name;
 
-  Location
-      .create(newLocation)
-      .then(
-          function(location){
-            res.redirect('/locations/' + location.id);
-          }, function(err) {
-            return next(err);
-          });
+  // create a new Location instance
+  var location = new Location(
+    {
+      name: req.body.name,
+      user: req.user.id
+    });
+
+  // save `location` to the database
+  var saveLocation = function(done) {
+    location.save(function(err) {
+      if (err) console.log(err);
+      console.log('Location saved');
+      done();
+    });
+  };
+
+  // redirect user to the user's profile page
+  res.redirect('/users/' + req.user.id);
+
 };
 
-
+// Shows a location's most popular instagram photos
 var show = function(req, res, next) {
   //get instagram data
   var instagramData;
+
   instagram.get(req.params.id, function(stringdata){
     instagramData = JSON.parse(stringdata);
-    console.log('instagramData: ' + instagramData);
     instagramData = instagramData.data.map(function(post){
       return post.images.standard_resolution.url;
     });
+
     console.log('instagramData mapped: ' + instagramData);
 
 //get numbeo data
@@ -74,11 +77,10 @@ var show = function(req, res, next) {
               instagramData: instagramData,
               numbeoData: numbeoData
             });
+
     });
   });
 };
-
-
 
 module.exports = {
   index:  index,
