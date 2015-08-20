@@ -3,10 +3,7 @@ var mongoose = require('mongoose');
 
 // Creating Schema to define structure of 'locations' in our DB
 var LocationSchema = new mongoose.Schema({
-  name: String,
-  user: {
-    type: mongoose.Schema.Types.ObjectId, ref: 'User'
-  }
+  name: String
 });
 
 // Creating Location model that maps to LocationSchema
