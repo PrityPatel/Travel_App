@@ -1,6 +1,5 @@
 // Source in Location model
 var Location = require('../models/Location');
-var async = require('async');
 
 // Source in http request methods for the Instagram API
 var instagram = require('../api/instagram');
