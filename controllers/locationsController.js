@@ -1,5 +1,6 @@
 var Location = require('../models/Location');
 var instagram = require('../api/instagram');
+//require numbeo
 
 //this will render ALL locations
 var index = function(req, res, next) {
@@ -43,6 +44,10 @@ var show = function(req, res, next) {
       return post.images.standard_resolution.url;
     });
     console.log('instagramData mapped: ' + instagramData);
+
+//add in numbeo data
+
+
     Location.findById(req.params.id, function(location) {
           res.render('locations/show',
             {
