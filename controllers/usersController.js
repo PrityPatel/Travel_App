@@ -52,12 +52,11 @@ var show = function(req, res, next) {
 //Edit User Profile
 // GET '/users/:id/edit'
 function userEdit (req, res) {
-  User.findById(req.params.id, function(err, formUser) {
+  User.findById(req.params.id, function(err, user) {
     if(err) res.json({message: 'Could not find user because:' + err});
-      res.render('users/edit', {formUser: formUser, user: req.user});
+      res.render('users/edit', {user: req.user});
     });
-  });
-}
+  }
 
 // PUT '/users/:id'
 function userUpdate (req, res, next) {
