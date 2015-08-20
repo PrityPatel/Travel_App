@@ -5,7 +5,7 @@ var User = require('../models/User');
 
 // Get the new user form
 var newUser = function(req, res, next) {
-  res.render('auth/register');
+  res.render('auth/register', {user: req.user});
 };
 
 //Post and save the data from the new user form
