@@ -45,28 +45,36 @@ var show = function(req, res, next) {
       return post.images.standard_resolution.url;
     });
 
-    console.log('instagramData mapped: ' + instagramData);
+    console.log('Array of Instagram Photo URLs: ' + instagramData);
 
 //get numbeo data of average prices for certain items per city
   var numbeoData, locationName;
+
   if (req.params.id == "728021537") locationName = "London";
   if (req.params.id == "523722982") locationName = "Mumbai";
   if (req.params.id == "35932492") locationName = "New+York";
   if (req.params.id == "301343440") locationName = "Paris";
   if (req.params.id == "167346217") locationName = "San+Francisco";
   if (req.params.id == "213193384") locationName = "Shanghai";
+
   numbeo.get(locationName, function(stringdata){
-    numbeoData = JSON.parse(stringdata);
-    numbeoData.prices.forEach(function(post){
-      console.log('item name: ' + post.item_name + ' average price: ' + post.average_price);
+    // first turn JSON into an object, then
+    // get the `prices` array inside it and assign it to var `numbeoData`
+    numbeoData = JSON.parse(stringdata).prices;
+    // turn numbeoData into an array of objects with 'name' and 'price' as key names
+    numbeoData = numbeoData.map(function(item) {
+      return {name: item.item_name, price: item.average_price};
     });
-    console.log('numbeoData: ' + numbeoData);
+
+  numbeoData.forEach(function(pricegroup) {
+    console.log('Item: ' + pricegroup.name + ' price:' + pricegroup.price);
+    });
   });
 
   Location.findById(req.params.id, function(location) {
     res.render('locations/show',
       {
-        location: location,
+        location: locationName,
         user:    req.user,
         instagramData: instagramData,
         numbeoData: numbeoData
