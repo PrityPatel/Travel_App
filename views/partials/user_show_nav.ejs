@@ -15,7 +15,8 @@
     <form class="navbar-form navbar-right" role="search">
 
 
-    <select class="droplist" onChange="window.location.href=this.value">
+    <select class="droplist"  onChange="window.location.href=this.value">
+
       <option selected disabled>Choose a City</option>
       <option value="/locations/728021537">London</option>
       <option value="/locations/523722982">Mumbai</option>
@@ -46,5 +47,14 @@
     </ul>
   </div><!-- /.navbar-collapse -->
 
+  <select  id="off_canvas_drop" onChange="window.location.href=this.value">
+    <option selected disabled>Menu</option>
+    <option value="/locations/">Browse Cities</option>
+    <option value="/users/show">My Profile</option>
+    <option value="/login">Login</option>
+    <option value="/register">Register</option>
+    <option value="/logout">Logout</option>
+  </select>
+  </div>
 
 </nav>
