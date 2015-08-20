@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   /*font-family: 'Bangers', cursive;*/
   /*font-family: 'Shadows Into Light', cursive;*/
@@ -45,7 +45,7 @@ body {
 }
 
 #city_expense{
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   color: white;
 }
@@ -73,13 +73,14 @@ body {
 #costs{
   color: white;
   position: absolute;
-  right: 100px;
+  right: 60px;
   display: inline-block;
   top: 180px;
   background-color: rgba(0,0,0, 0.3);
   padding: 10px;
   border-radius: 15px;
   border: 3px solid rgba(0,0,0,0.5);
+  width: 35%;
 }
 
 .droplist{
@@ -162,8 +163,8 @@ li{
 
 #my_list_button{
   position: absolute;
-  top: 100px;
-  right: 140px;
+  top: 140px;
+  right: 190px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
@@ -261,7 +262,7 @@ td{
   z-index: -1;
   float: left;
   margin-bottom: 20px;
-  width: 100%;
+  width: 95%;
   background-color: black;
   padding: 15px;
   padding-top: 25px;
@@ -371,11 +372,13 @@ ul{
   position: relative;
   left: 20px;
   margin-bottom: 100px;
+  width: 90%;
 }
 
 .city_thumbs{
   position: relative;
   margin-bottom: 20px;
+  top: 60px;
 }
 
 #city_expense{
@@ -393,6 +396,7 @@ ul{
   left: 20px;
   text-align: center;
   position: relative;
+  top: 40px;
 }
 
 #off_canvas_drop{
@@ -412,6 +416,9 @@ ul{
 
 .thumbs{
   height: 40%;
+  width: 100%;
+  position: relative;
+  left: -30px;
 }
 
 .user_name{
