@@ -210,6 +210,12 @@ li{
     position: absolute;
 }
 
+#register_button, #login_button{
+  right: 30px;
+  bottom: 50px;
+  position: absolute;
+}
+
 .rotating-item-wrapper {
     position: absolute
     ;
