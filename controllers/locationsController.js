@@ -66,21 +66,22 @@ var show = function(req, res, next) {
       return {name: item.item_name, price: item.average_price};
     });
 
-  numbeoData.forEach(function(pricegroup) {
-    console.log('Item: ' + pricegroup.name + ' price:' + pricegroup.price);
+    numbeoData.forEach(function(pricegroup) {
+      console.log('Item: ' + pricegroup.name + ' price:' + pricegroup.price);
     });
-  });
 
-  Location.findById(req.params.id, function(location) {
-    res.render('locations/show',
-      {
-        location: locationName,
-        user:    req.user,
-        instagramData: instagramData,
-        numbeoData: numbeoData
+    Location.findById(req.params.id, function(location) {
+      res.render('locations/show',
+        {
+          location: locationName,
+          user:    req.user,
+          instagramData: instagramData,
+          numbeoData: numbeoData
+        });
       });
     });
   });
+
 };
 
 module.exports = {

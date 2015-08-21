@@ -11,11 +11,13 @@ body{
 }
 </style>
 
+
 </head>
 <body>
-  <% include ../partials/nav %>
+<% include ../partials/nav %>
 
-  <p class="siteName_city"><%= location %></p>
+<p class="siteName_city"><%= location %></p>
+
 
 <!--   <form action="show_submit" method="post" accept-charset="utf-8">
     <input value="<% location.id %>">
@@ -24,26 +26,44 @@ body{
   <button id="my_list_button" type="button">Add this City to my List</button>
 </form> -->
 
+<button id="my_list_button" type="button">Add this City to my List</button>
 
-  <div class="city_thumbs">
-      <p id="instagram_pics">Instagram Pics</p>
 
-      <% instagramData.forEach(function(photo){ %>
+<div class="city_thumbs">
+  <p id="instagram_pics">Instagram Pics</p>
 
-      <div class="thumb"><img class="thumb_pic" src="<%= photo %>" onclick="window.open(this.src)" />
+  <% instagramData.forEach(function(photo){ %>
+    <div class="thumb">
+      <img class="thumb_pic" src="<%= photo %>" onclick="window.open(this.src)" />
+    </div>
+  <% });%>
+</div>
 
-     </div>
+<div id="costs">
+  <p id="city_name">Cost of Living in <%= location %></p>
 
-      <% });%>
-
-  </div>
-
-  <div id="costs">
-      <p id="city_name"></p>
+  <% numbeoData.forEach(function(prices){ %>
       <table>
-        <caption id="city_expense">Living Expenses for <%= location %></caption>
 
-  </div>
+      <thead>
+        <tr>
+
+        </tr>
+      </thead>
+      <tbody>
+        <% numbeoData.forEach(function(item) { %>
+        <tr>
+          <td>- <%= item.name %></td>
+          <td id="currency"></td>
+          <td class="price"><%= item.price.toFixed(2) %></td>
+        </tr>
+
+        <% }); %>
+      </tbody>
+    </table>
+     <%= prices.name + prices.price %>
+  <% }); %>
+</div>
 
 </body>
 </html>

@@ -62,11 +62,18 @@ body {
   text-shadow: 4px 2px black;
 }
 
+#city_name{
+  color: white;
+  font-size: 30px;
+  text-shadow: 4px 2px black;
+}
+
 .city_thumbs{
   width: 60%;
   display: inline-block;
   position: absolute;
   top: 150px;
+  left: 50px;
   margin-bottom: 250px;
 }
 
@@ -204,6 +211,10 @@ li{
   position: absolute;
 }
 
+.price{
+  float: right;
+}
+
 #register_button, #login_button{
   right: 30px;
   bottom: 50px;
@@ -245,7 +256,8 @@ li{
   top: 40px;
   left: 370px;
   text-align: center;
-  color: rgba(255,255,255, 0.8);
+  color: white;
+  text-shadow: 4px 2px black;
 }
 
 table{
@@ -253,7 +265,9 @@ table{
 }
 
 td{
-  font-size: 20px;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  padding-right: 10px;
 }
 
 .thumbs{
