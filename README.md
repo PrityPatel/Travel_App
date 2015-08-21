@@ -2,22 +2,22 @@
 
 ###  Project Concept & Overview
 
+The experience of this app is …"Experience living in another city…. for a day, for a year….fantasy, reality... now or later…. You decide!” (working concept… title will be modified)
+
 A working full-stack application (with initial seed data) hosted on heroku at:
 
   `https://pacific-sands-5189.herokuapp.com/`
 
   - A place for users to browse locations and see instagram photos and cost of living data from the location selected.
 
-  - Users can log in and save their desired locations or browse without logging in to the app.
+  - Users can log in and save their desired locations or just browse without logging in to the app.
 
-The experience of this app is …"Experience living in another city…. for a day, for a year….fantasy, reality... now or later…. You decide!” (this is a working concept… title will be modified)
-
-User enters their city, country of choice (or browse locations) and when they click to open up a location, they would have to log in, then:
-  - User is taken to a page where Instagram images from that city are displayed (Thanks Instagram API) and the cost of living is displaying (because of the Numbeo API). Users only have to be authenticated with Instagram (OAuth) IF they want to connect, comment, or like (which is an icebox user story feature).
-
-For this sprint we are limiting the amount of locations.
-
-This idea allows for additional API's going forward… for instance: foursquare, yelp, twitter, facebook, etc.
+User enters their location of choice (or browse locations) and when they click to open up a location, User is taken to a page where:
+  - Instagram images from that city are displayed (Thanks Instagram API) and
+  - Cost of living data is displaying (Thanks Numbeo API).
+  - Users only have to be authenticated with Instagram (OAuth) IF they want to connect, comment, or like the images (OAuth is a feature for Sprint #2).
+  - For this sprint we are limiting the amount of locations to: London, Mumbai, New York, Paris, San Francisco, and Shanghai.
+  - This idea allows for additional API's going forward, for instance: foursquare, yelp, twitter, facebook, etc.
 
 **Below is a screenshot of an article of interesting ways to use the Instagram API**
 
@@ -33,11 +33,18 @@ This idea allows for additional API's going forward… for instance: foursquare,
   - Bootstrap CSS framework
   - HTML for structure of webpage
   - GitHub
+  - MongoLab for database management
+  - Heroku for site deployment
   - SublimeText2
 
-  ## External APIs consumed:
-    - Instagram (to get images)
-    - Numbeo (to get cost of living data)
+## External APIs consumed:
+  - Instagram (to get images)
+  - Numbeo (to get cost of living data)
+
+## Wireframes, ERDs, User Stories (MVP and Icebox):
+
+  -  Attached via Trello along with App statement:
+    - `https://trello.com/b/PkFL0UrL/travel-app`
 
 ## Installation Instructions (Getting Started):
 
@@ -60,9 +67,14 @@ This idea allows for additional API's going forward… for instance: foursquare,
 
     - You now have a local copy on your computer and a remote copy on Github. Open the local files in your favorite text editor, such as Sublime Text.
 
-## Wireframes, ERDs, User Stories (MVP and Icebox):
 
-  -  Attached via Trello along with App statement:
-    - `https://trello.com/b/PkFL0UrL/travel-app`
+## Team
+  - This Project was completed by the following students in General Assembly's Web Development Immersive Program, June 2015:
+
+   - Kevin Huelsmann: Frontend (primary)
+   - Kimberly Yi: Frontend (secondary)
+   - Tiffany Chang: Backend (primary)
+   - Prity Patel: Team Lead, Project Concept, Backend
 
 ---
+
