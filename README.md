@@ -1,6 +1,14 @@
 # Project #3: Working as a Team with Express
 
-###  Project Concept
+###  Project Concept & Overview
+
+A working full-stack application (with initial seed data) hosted on heroku at:
+
+  `https://pacific-sands-5189.herokuapp.com/`
+
+  - A place for users to browse locations and see instagram photos and cost of living data from the location selected.
+
+  -Users ca save
 
 The experience of this app is …"Experience living in another city…. for a day, for a year….fantasy, reality... now or later…. You decide!” (this is a working concept… title will be modified)
 
