@@ -36,8 +36,8 @@ This idea allows for additional API's going forward… for instance: foursquare,
   - SublimeText2
 
 ## External APIs consumed:
-    - Instagram (to get images)
-    - Numbeo (to get cost of living data)
+  - Instagram (to get images)
+  - Numbeo (to get cost of living data)
 
 ## Installation Instructions (Getting Started):
 
