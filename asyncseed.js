@@ -31,39 +31,49 @@ var removeLocations = function(done) {
 };
 
 var createUsers = function(done) {
-  // `Promise.all` returns a promise that is fulfilled when all the items in the array are fulfilled.
-  Promise.all([
-    User.register(new User(
-      {
-        name: 'Phil',
-        username: 'phil@email.com',
-      }), 'phil').then(function(user) {
-        phil = user;
-        console.log('Phil created!');
-    }),
-    User.register(new User(
-      {
-        name: 'Jim',
-        username: 'jim@email.com'
-      }),'jim').then(function(user) {
-        jim = user;
-        console.log('Jim created!');
-    })
-  ]).then(function(){
-    console.log("Users created!");
-    done();
+  User.register(new User({
+     name: 'Phil',
+     username: 'phil@email.com'
+    }), 'phil', function(err, user) {
+      phil = user;
+      User.register(new User(
+        {
+         name: 'jim',
+         username: 'jim@email.com'
+        }), 'jim', function(err, user) {
+          jim = user
+          done();
+      });
   });
 };
 
 var createLocations = function(done) {
   Promise.all([
     Location.create({
-      name: "San Francisco",
-      user: phil._id
+      name: "London",
+      instagramId: 728021537,
+    }),
+    Location.create({
+      name: "Mumbai",
+      instagramId: 523722982,
     }),
     Location.create({
       name: "New York",
+      instagramId: 35932492,
       user: jim._id
+    }),
+    Location.create({
+      name: "Paris",
+      instagramId: 301343440,
+    }),
+    Location.create({
+      name: "San Francisco",
+      instagramId: 167346217,
+      user: phil._id
+    }),
+    Location.create({
+      name: "Paris",
+      instagramId: 213193384,
     })
   ]).then(function() {
     console.log("Created locations!");
