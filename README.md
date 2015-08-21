@@ -71,9 +71,9 @@ User enters their location of choice (or browse locations) and when they click t
 ## Team
   - This Project was completed by the following 4 students (listed in alphabetical order by last name) in General Assembly's Web Development Immersive Program, June 2015:
 
-   - Tiffany Chang: Backend(primary)
-   - Kevin Huelsmann: Frontend(primary)
-   - Prity Patel: Team Lead, Project Concept Development, and Backend(secondary)
-   - Kimberly Yi: Frontend(secondary)
+   - Tiffany Chang: Backend (primary)
+   - Kevin Huelsmann: Frontend (primary)
+   - Prity Patel: Team Lead, Project Concept Development, and Backend (secondary)
+   - Kimberly Yi: Frontend (secondary)
 ---
 
