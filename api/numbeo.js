@@ -1,4 +1,4 @@
-require('dotenv').load();
+// require('dotenv').load();
 var request = require('request');
 var baseURL = "http://www.numbeo.com/api/city_prices?api_key=";
 var clientID = process.env.NUMBEO_API_KEY;
