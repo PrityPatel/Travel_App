@@ -66,6 +66,7 @@ body {
   color: white;
   font-size: 30px;
   text-shadow: 4px 2px black;
+  text-align: center;
 }
 
 .city_thumbs{
@@ -83,11 +84,22 @@ body {
   right: 30px;
   display: inline-block;
   top: 180px;
-  background-color: rgba(0,0,0, 0.3);
+  background-color: rgba(0,0,0, 0.6);
   padding: 10px;
   border-radius: 15px;
   border: 3px solid rgba(0,0,0,0.5);
   width: 40%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.currency, .price{
+
+  font-size: 20px;
+}
+
+.currency_n_price{
+
+  right: 0;
 }
 
 .droplist{
@@ -137,6 +149,10 @@ h1{
   font-size: 20px;
   text-align: center;
   color: white;
+}
+
+.item{
+  padding-bottom:10px;
 }
 
 li{
@@ -217,8 +233,8 @@ li{
 }
 
 .price{
-  position: relative;
-  right: 0;
+  /*position: relative;
+  right: 0;*/
 }
 
 #register_button, #login_button{

@@ -68,12 +68,13 @@ $('.currency').append('¥');
         </tr>
       </thead>
       <tbody>
-        <p id="local_currency">Local Currency</p>
         <% numbeoData.forEach(function(item) { %>
           <tr>
-          <td>- <%= item.name %></td>
+          <td class="item">- <%= item.name %></td>
+          <div class="currency_n_price">
           <td class="currency"></td>
           <td class="price"><%= item.price.toFixed(2) %></td>
+          </div>
         </tr>
 
         <% }); %>
