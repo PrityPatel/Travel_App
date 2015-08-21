@@ -1,48 +1,44 @@
 $( document ).ready(function() {
 
-$('body').fadeTo(0, 0).fadeTo(1000, 1);
+  $('body').fadeTo(0, 0).fadeTo(1000, 1);
 
+  //imageRotator
+  var InfiniteRotator = {
+    init: function(){
+      //initial fade-in time (in milliseconds)
+      var initialFadeIn = 1000;
 
+      //interval between items (in milliseconds)
+      var itemInterval = 5000;
 
-//imageRotator
-    var InfiniteRotator =
-    {
-        init: function()
-        {
-            //initial fade-in time (in milliseconds)
-            var initialFadeIn = 1000;
+      //cross-fade time (in milliseconds)
+      var fadeTime = 2500;
 
-            //interval between items (in milliseconds)
-            var itemInterval = 5000;
+      //count number of items
+      var numberOfItems = $('.rotating-item').length;
 
-            //cross-fade time (in milliseconds)
-            var fadeTime = 2500;
+      //set current item
+      var currentItem = 0;
 
-            //count number of items
-            var numberOfItems = $('.rotating-item').length;
+      //show first item
+      $('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
 
-            //set current item
-            var currentItem = 0;
+      //loop through the items
+      var infiniteLoop = setInterval( function() {
+        $('.rotating-item').eq(currentItem).fadeOut(fadeTime);
 
-            //show first item
-            $('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
+        if(currentItem == numberOfItems -1){
+            currentItem = 0;
+        } else {
+            currentItem++;
+        };
+        $('.rotating-item').eq(currentItem).fadeIn(fadeTime);
 
-            //loop through the items
-            var infiniteLoop = setInterval(function(){
-                $('.rotating-item').eq(currentItem).fadeOut(fadeTime);
+        }, itemInterval);
+    }
+  };
 
-                if(currentItem == numberOfItems -1){
-                    currentItem = 0;
-                }else{
-                    currentItem++;
-                }
-                $('.rotating-item').eq(currentItem).fadeIn(fadeTime);
-
-            }, itemInterval);
-        }
-    };
-
-    InfiniteRotator.init();
+  InfiniteRotator.init();
 
 });
 
