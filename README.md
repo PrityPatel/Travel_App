@@ -35,7 +35,7 @@ This idea allows for additional API's going forward… for instance: foursquare,
   - GitHub
   - SublimeText2
 
-  ## External APIs consumed:
+## External APIs consumed:
     - Instagram (to get images)
     - Numbeo (to get cost of living data)
 
