@@ -10,20 +10,18 @@
   <% include ../partials/nav.ejs %>
   <h1 class="text-center user_name"><%= user.name %>'s Profile</h1>
 
-</div>
   <!-- This will populate user's saved cities -->
-      <h3 id="my_cities" class="text-center">My Cities</h3>
+  <h3 id="my_cities" class="text-center">My Cities</h3>
 
-
-<% if (user.location) { %>
-  <% user.location.forEach(function(location){ %>
-  <div id="thumbs_small">
-  <a href="/locations/<%= location.id %>" >
-    <img src="<%= location.image_uri %> ">
-  </a>
-  </div>
-  <% }) %>
+  <% if (user.location) { %>
+    <% user.location.forEach(function(location){ %>
+      <div id="thumbs_small">
+        <a href="/locations/<%= location.id %>" >
+          <p><%= location.name %></p>
+        </a>
+      </div>
+    <% }) %>
   <% } %>
-
 </body>
+
 </html>

@@ -15,45 +15,15 @@ body{
 
 <div id="upper"></div>
 
-<ul id="location_index_ul">
-
-<a href="/locations/728021537">
-  <div class="thumbs" id="thumb_london">
-    <li class="city" ><p class="city_name">London</p></li>
-  </div>
-</a>
-
-<a href="/locations/523722982">
-  <div class="thumbs" id="thumb_mumbai" >
-   <li class="city" ><p class="city_name">Mumbai</p></li>
-  </div>
-  </a>
-
-<a href="/locations/35932492">
-    <div class="thumbs" id="thumb_new_york">
-      <li class="city"><p class="city_name">New York</p></li>
-  </div>
-</a>
-
-<a href="/locations/301343440">
-  <div class="thumbs" id="thumb_paris">
-   <li class="city" ><p class="city_name">Paris</p></li>
-  </div>
-</a>
-
-<a href="/locations/167346217">
-  <div class="thumbs" id="thumb_san_fransisco">
-   <li class="city" ><p class="city_name">San Fransisco</p></li>
-  </div>
-</a>
-
-<a href="/locations/213193384">
-  <div class="thumbs" id="thumb_shanghai">
-   <li class="city" ><p class="city_name">Shanghai</p></li>
-  </div>
-  </a>
-
-</ul>
+  <ul id="location_index_ul">
+  <% locations.forEach(function(location) { %>
+    <a href="/locations/<%= location.id %>">
+      <div class="thumbs" id="thumb_<%= location.snakeName() %>">
+        <li class="city" ><p class="city_name"><%= location.name %></p></li>
+      </div>
+    </a>
+  <% }) %>
+  </ul>
 
 
 </body>

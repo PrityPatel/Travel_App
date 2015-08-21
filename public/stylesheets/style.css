@@ -1,23 +1,15 @@
-a {
-    /*color: #00B7FF;*/
-    /*text-decoration: none;*/
-    /*color: black;*/
-
-    /*font-size: 25px;*/
-}
-
 body {
-    padding: 50px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    /*font-family: 'Bangers', cursive;*/
-    /*font-family: 'Shadows Into Light', cursive;*/
-    /*font-family: 'Fjalla One', sans-serif;*/
-    /*font-family: 'Sigmar One', cursive;*/
-    /*font-family: 'Pacifico', cursive;*/
-    font-family: 'Lobster', cursive;
-    /*font-family: 'Rock Salt', cursive;*/
-    background-color: black;
+  padding: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*font-family: 'Bangers', cursive;*/
+  /*font-family: 'Shadows Into Light', cursive;*/
+  /*font-family: 'Fjalla One', sans-serif;*/
+  /*font-family: 'Sigmar One', cursive;*/
+  /*font-family: 'Pacifico', cursive;*/
+  font-family: 'Lobster', cursive;
+  /*font-family: 'Rock Salt', cursive;*/
+  background-color: black;
 }
 
 #bottom{
@@ -35,11 +27,11 @@ body {
   }
 
 #button{
-    background-color: rgba(255,255,255, 0.8);
-    position: absolute;
-    display: inline-block;
-    top: 0px;
-    left: 205px;
+  background-color: rgba(255,255,255, 0.8);
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  left: 205px;
 }
 
 .city{
@@ -53,9 +45,9 @@ body {
 }
 
 #city_expense{
-    font-size: 25px;
-    text-align: center;
-    color: white;
+  font-size: 20px;
+  text-align: center;
+  color: white;
 }
 
 .city_link{
@@ -70,61 +62,78 @@ body {
   text-shadow: 4px 2px black;
 }
 
+#city_name{
+  color: white;
+  font-size: 30px;
+  text-shadow: 4px 2px black;
+  text-align: center;
+}
+
 .city_thumbs{
-    /*width: 525px;*/
-    width: 60%;
-    display: inline-block;
-    position: absolute;
-    top: 150px;
-    margin-bottom: 250px;
+  width: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  margin-bottom: 250px;
 }
 
 #costs{
-    color: white;
-    position: absolute;
-    right: 100px;
-    display: inline-block;
-    top: 180px;
-    background-color: rgba(0,0,0, 0.3);
-    padding: 10px;
-    border-radius: 15px;
-    border: 3px solid rgba(0,0,0,0.5);
-    /*box-shadow: 10px 10px 5px rgba(0,0,0,0.5);*/
+  color: white;
+  position: absolute;
+  right: 30px;
+  display: inline-block;
+  top: 180px;
+  background-color: rgba(0,0,0, 0.6);
+  padding: 10px;
+  border-radius: 15px;
+  border: 3px solid rgba(0,0,0,0.5);
+  width: 40%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.currency, .price{
+
+  font-size: 20px;
+}
+
+.currency_n_price{
+
+  right: 0;
 }
 
 .droplist{
-    text-align: center;
-    top: 10px;
-    display: inline;
-    position: absolute;
-    left: 400px;
-    width: 200px;
-    height: 30px;
-    font-size: 20px;
-    color: black;
+  text-align: center;
+  top: 10px;
+  display: inline;
+  position: absolute;
+  left: 400px;
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+  color: black;
 }
 
 #droplist_city{
-    /*text-align: center;*/
-    position: absolute;
-    top: 150px;
-    right: 100px;
+  position: absolute;
+  top: 150px;
+  right: 100px;
 }
 
 #drop{
-    background-color: rgba(255,255,255, 0.7);
-    font-size: 20px;
-    width: 200px;
-    height: 30px;
-    padding: 30px;
-    margin: 0 auto;
+  background-color: rgba(255,255,255, 0.7);
+  font-size: 20px;
+  width: 200px;
+  height: 30px;
+  padding: 30px;
+  margin: 0 auto;
 }
 
 #footer{
-    color: white;
-    botton: 0px;
-    text-align: center;
-    position: relative;
+  color: white;
+  botton: 0px;
+  text-align: center;
+  position: relative;
 }
 
 .form{
@@ -133,27 +142,36 @@ body {
 }
 
 h1{
-    text-align: center;
+  text-align: center;
 }
 
 #instagram_pics{
-    font-size: 20px;
-    text-align: center;
-    color: white;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.item{
+  padding-bottom:10px;
 }
 
 li{
   text-decoration: none;
 }
 
+#local_currency{
+  text-align: center;
+  font-size: 20px;
+}
+
 #locations_background{
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    position: fixed;
-    background-image: url('http://jasoncouponking.com/wp-content/uploads/2015/03/Cool-Green-Background-Drawing-of-Green-Spring-Leaves.jpg');
-    left: 0;
-    top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  background-image: url('http://jasoncouponking.com/wp-content/uploads/2015/03/Cool-Green-Background-Drawing-of-Green-Spring-Leaves.jpg');
+  left: 0;
+  top: 0;
 }
 
 #location_index_ul{
@@ -167,19 +185,15 @@ li{
   float: right;
 }
 
-/*.login_form{
-    color: rgba(255,255,255, 0.8);
-}*/
-
 #my_cities{
   color: black;
 }
 
 #my_list_button{
-    position: absolute;
-    top: 100px;
-    right: 140px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 140px;
+  right: 190px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
 #name, #email, #password{
@@ -188,13 +202,13 @@ li{
 }
 
 .navynav{
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: rgba(255,255,255, 0.7);
-    position: fixed;
-    z-index: 3;
-    border: 2px solid rgba(0,0,0,0.5);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(255,255,255, 0.7);
+  position: fixed;
+  z-index: 3;
+  border: 2px solid rgba(0,0,0,0.5);
 }
 
 #off_canvas_drop{
@@ -211,11 +225,16 @@ li{
 }
 
 .pic{
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0px;
-    position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0px;
+  position: absolute;
+}
+
+.price{
+  /*position: relative;
+  right: 0;*/
 }
 
 #register_button, #login_button{
@@ -229,46 +248,48 @@ li{
 }
 
 .rotating-item-wrapper {
-    position: absolute
-    ;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .rotating-item {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .siteName{
-    font-size: 70px;
-    position: relative;
-    text-align: center;
-    color: rgba(255,255,255, 0.8);
+  font-size: 70px;
+  position: relative;
+  text-align: center;
+  color: rgba(255,255,255, 0.8);
 }
 
 .siteName_city{
-    font-size: 70px;
-    position: absolute;
-    top: 40px;
-    left: 370px;
-    text-align: center;
-    color: rgba(255,255,255, 0.8);
+  font-size: 70px;
+  position: absolute;
+  top: 40px;
+  left: 370px;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 2px black;
 }
 
 table{
-    width: 300px;
+  width: 300px;
 }
 
 td{
-    font-size: 20px;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  padding-right: 10px;
 }
 
 .thumbs{
@@ -277,7 +298,7 @@ td{
   z-index: -1;
   float: left;
   margin-bottom: 20px;
-  width: 100%;
+  width: 95%;
   background-color: black;
   padding: 15px;
   padding-top: 25px;
@@ -294,7 +315,7 @@ td{
   height: 100px;
 }
 
-#thumb_london, #thumb_mumbai, #thumb_new_york, #thumb_paris, #thumb_san_fransisco, #thumb_shanghai{
+#thumb_london, #thumb_mumbai, #thumb_new_york, #thumb_paris, #thumb_san_francisco, #thumb_shanghai{
   background-size: cover;
 }
 
@@ -314,7 +335,7 @@ td{
   background-image: url('http://www.hdfbcover.com/randomcovers/covers/Eiffel-tower-paris-france-fb-cover-photo.jpg');
 }
 
-#thumb_san_fransisco{
+#thumb_san_francisco{
   background-image: url('http://www.sleekcover.com/covers/san-francisco-facebook-cover.jpg');
 }
 
@@ -328,7 +349,6 @@ td{
   border-radius: 10px;
   border: 3px solid black;
   position: relative;
-  /*z-index: 1;*/
   left: 0px;
   bottom: 0px;
   -webkit-transition: all 0.5s ease;
@@ -359,14 +379,11 @@ td{
 }
 
 .thumb{
-float: left;
+  float: left;
   margin: 12px;
   width: 150px;
   height: 150px;
-  /*margin: 0 auto;*/
   text-align: center;
-  /*background-color: red;*/
-  /**/
   background-color: black;
   border-radius: 10px;
 }
@@ -391,11 +408,13 @@ ul{
   position: relative;
   left: 20px;
   margin-bottom: 100px;
+  width: 90%;
 }
 
 .city_thumbs{
   position: relative;
   margin-bottom: 20px;
+  top: 60px;
 }
 
 #city_expense{
@@ -413,6 +432,7 @@ ul{
   left: 20px;
   text-align: center;
   position: relative;
+  top: 40px;
 }
 
 #off_canvas_drop{
@@ -432,6 +452,9 @@ ul{
 
 .thumbs{
   height: 40%;
+  width: 100%;
+  position: relative;
+  left: -30px;
 }
 
 .user_name{
