@@ -12,7 +12,6 @@ A working full-stack application (with initial seed data) hosted on heroku at:
 
   - Users can log in and save their desired locations or just browse without logging in to the app.
 
-
 User enters their location of choice (or browse locations) and when they click to open up a location, User is taken to a page where:
   - Instagram images from that city are displayed (Thanks Instagram API) and
   - Cost of living data is displaying (Thanks Numbeo API).
@@ -69,4 +68,12 @@ User enters their location of choice (or browse locations) and when they click t
     - You now have a local copy on your computer and a remote copy on Github. Open the local files in your favorite text editor, such as Sublime Text.
 
 
+## Team
+  - This Project was completed by the following 4 students (listed in alphabetical order by last name) in General Assembly's Web Development Immersive Program, June 2015:
+
+   - Tiffany Chang: Backend(primary)
+   - Kevin Huelsmann: Frontend(primary)
+   - Prity Patel: Team Lead, Project Concept Development, and Backend(secondary)
+   - Kimberly Yi: Frontend(secondary)
 ---
+
