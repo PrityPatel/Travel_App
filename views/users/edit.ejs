@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <% include ../partials/head %>
+
+
+
+
+<style type="text/css">
+
+body {
+  background-image:url(http://khiri.com/wp-content/uploads/2013/08/Khiri-Travel-Began-Sunrise.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #faebd7;
+}
+
+</style>
+<% include ../partials/nav.ejs %>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+
+</head>
+<body>
+
+<h1>Edit Profile</h1>
+<div class="container">
+  <form method="POST" action="/users/<%= user.id %>?_method=PUT">
+<!-- name -->
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" name="name" class="form-control" id="name" placeholder="<%= user.name %>" value="<%= user.name %>">
+    </div>
+<!-- e-mail -->
+    <div class="form-group">
+      <label for="name">E-mail</label>
+      <input type="email" name="username" class="form-control" id="email" placeholder="<%= user.username %>" value="<%= user.username %>">
+    </div>
+
+<!-- submit button -->
+<p><button class="btn btn-success" type="submit" name="action">Submit</button></p>
+</form>
+<!-- delete -->
+<p>
+  <form action="/users/<%= user.id%>?_method=DELETE" method="POST">
+    <button class="btn btn-danger" type="submit">Delete Profile</button>
+  </form>
+</p>
+
+</div>
+</body>
+</html>
