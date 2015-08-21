@@ -4,10 +4,6 @@ var mongoose = require('mongoose');
 // Load passport-local-mongoose for hashing passwords
 var passportLocalMongoose = require('passport-local-mongoose');
 
-
-// // Loading Location in order to reference locations in the User Schema
-// var Location = require('./Location');
-
 // Creating Schema to define structure of 'users' in our DB
 var UserSchema = new mongoose.Schema({
   name: String,
