@@ -1,6 +1,7 @@
-// Loading the Mongoose library
+// Loading Mongoose as the ORM for MongoDB
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+
+// Load passport-local-mongoose for hashing passwords
 var passportLocalMongoose = require('passport-local-mongoose');
 
 // Creating Schema to define structure of 'users' in our DB

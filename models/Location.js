@@ -1,3 +1,4 @@
+// Require lodash for _.snakeCase method
 var _ = require('lodash');
 
 // Loading Mongoose as our ORM for MongoDB
