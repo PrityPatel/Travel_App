@@ -3,6 +3,7 @@ $( document ).ready(function() {
 $('body').fadeTo(0, 0).fadeTo(1000, 1);
 
 
+
 //imageRotator
     var InfiniteRotator =
     {

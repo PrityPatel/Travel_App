@@ -11,6 +11,23 @@ body{
 }
 </style>
 
+<script>
+$( document ).ready(function() {
+if (window.location.pathname === '/locations/213193384'){
+$('.currency').append('¥');
+}else if (window.location.pathname === '/locations/728021537'){
+  $('.currency').append('£');
+}else if (window.location.pathname === '/locations/523722982'){
+  $('.currency').append('₹');
+}else if (window.location.pathname === '/locations/35932492'
+  || window.location.pathname === '/locations/167346217'){
+  $('.currency').append('$');
+}else if (window.location.pathname === '/locations/301343440'){
+  $('.currency').append('€');
+}
+});
+</script>
+
 
 </head>
 <body>
@@ -51,10 +68,11 @@ body{
         </tr>
       </thead>
       <tbody>
+        <p id="local_currency">Local Currency</p>
         <% numbeoData.forEach(function(item) { %>
-        <tr>
+          <tr>
           <td>- <%= item.name %></td>
-          <td id="currency"></td>
+          <td class="currency"></td>
           <td class="price"><%= item.price.toFixed(2) %></td>
         </tr>
 
