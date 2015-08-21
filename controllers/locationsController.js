@@ -43,14 +43,15 @@ var create = function(req, res){
 // Shows a location's most popular instagram photos
 var show = function(req, res, next) {
 
-  Location.findById(req.params.id)
-          .then(function(location) {
+  Location
+    .findById(req.params.id)
+    .then(function(location) {
+
     // Gets instagram data
     var instagramData;
-
     instagram.get(location.instagramId, function(stringdata){
+      // Parse response and turn instagramData into an array of image urls
       instagramData = JSON.parse(stringdata);
-
       instagramData = instagramData.data.map(function(post){
         return post.images.standard_resolution.url;
       });

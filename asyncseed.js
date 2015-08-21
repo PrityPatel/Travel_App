@@ -11,9 +11,8 @@ var Location = require('./models/Location');
 var phil;
 var jim;
 
-// `.remove()` requires a callback function
-// in that callback function, `done()` is called
-// so that removeUsers returns a value.
+// `.remove()` requires a callback function; in that callback function,
+// `done()` is called so that removeUsers returns a value.
 var removeUsers = function(done) {
   User.remove({}, function(err) {
     if (err) console.log(err);
@@ -72,7 +71,7 @@ var createLocations = function(done) {
       user: phil._id
     }),
     Location.create({
-      name: "Paris",
+      name: "Shanghai",
       instagramId: 213193384,
     })
   ]).then(function() {
@@ -110,16 +109,5 @@ async.series([
   closeMongoose
 ]);
 
-// ^ what async.series does above is equivalent to:
-// closeMongoose(
-//   testLocationsPopulation(
-//     createLocations(
-//       createUsers(
-//         removeLocations(
-//           removeUsers)
-//         )
-//       )
-//     )
-//   )
 
 
