@@ -16,13 +16,13 @@ body{
 <div id="upper"></div>
 
   <ul id="location_index_ul">
-  <% locations.forEach(function(location) { %>
-    <a href="/locations/<%= location.id %>">
-      <div class="thumbs" id="thumb_<%= location.snakeName() %>">
-        <li class="city" ><p class="city_name"><%= location.name %></p></li>
-      </div>
-    </a>
-  <% }) %>
+    <% locations.forEach(function(location) { %>
+      <a href="/locations/<%= location.id %>">
+        <div class="thumbs" id="thumb_<%= location.snakeName() %>">
+          <li class="city" ><p class="city_name"><%= location.name %></p></li>
+        </div>
+      </a>
+    <% }) %>
   </ul>
 
 

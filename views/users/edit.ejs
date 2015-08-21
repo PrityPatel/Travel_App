@@ -28,26 +28,29 @@ body {
 <h1>Edit Profile</h1>
 <div class="container">
   <form method="POST" action="/users/<%= user.id %>?_method=PUT">
-<!-- name -->
+<!-- name form -->
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" name="name" class="form-control" id="name" placeholder="<%= user.name %>" value="<%= user.name %>">
     </div>
-<!-- e-mail -->
+<!-- e-mail form -->
     <div class="form-group">
       <label for="name">E-mail</label>
       <input type="email" name="username" class="form-control" id="email" placeholder="<%= user.username %>" value="<%= user.username %>">
     </div>
 
-<!-- submit button -->
-<p><button class="btn btn-success" type="submit" name="action">Submit</button></p>
-</form>
-<!-- delete -->
-<p>
-  <form action="/users/<%= user.id%>?_method=DELETE" method="POST">
-    <button class="btn btn-danger" type="submit">Delete Profile</button>
+<!-- submit button updates changes to user profile -->
+  <p>
+    <button class="btn btn-success" type="submit" name="action">Submit
+    </button>
+  </p>
   </form>
-</p>
+<!-- delete's the users profile -->
+  <p>
+    <form action="/users/<%= user.id%>?_method=DELETE" method="POST">
+      <button class="btn btn-danger" type="submit">Delete Profile</button>
+    </form>
+  </p>
 
 </div>
 </body>
