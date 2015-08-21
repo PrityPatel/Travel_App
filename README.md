@@ -67,14 +67,5 @@ User enters their location of choice (or browse locations) and when they click t
 
     - You now have a local copy on your computer and a remote copy on Github. Open the local files in your favorite text editor, such as Sublime Text.
 
-
-## Team
-  - This Project was completed by the following students in General Assembly's Web Development Immersive Program, June 2015:
-
-   - Kevin Huelsmann: Frontend (primary)
-   - Kimberly Yi: Frontend (secondary)
-   - Tiffany Chang: Backend (primary)
-   - Prity Patel: Team Lead, Project Concept, Backend
-
 ---
 
