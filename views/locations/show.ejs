@@ -59,7 +59,6 @@ $('.currency').append('¥');
 <div id="costs">
   <p id="city_name">Cost of Living in <%= location %></p>
 
-  <% numbeoData.forEach(function(prices){ %>
       <table>
 
       <thead>
@@ -80,8 +79,7 @@ $('.currency').append('¥');
         <% }); %>
       </tbody>
     </table>
-     <%= prices.name + prices.price %>
-  <% }); %>
+
 </div>
 
 </body>
