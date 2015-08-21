@@ -45,45 +45,34 @@ var show = function(req, res, next) {
 
   Location.findById(req.params.id)
           .then(function(location) {
-            //
-  // //get instagram data
-  var instagramData;
+    // //get instagram data
+    var instagramData;
 
-  instagram.get(location.instagramId, function(stringdata){
-    instagramData = JSON.parse(stringdata);
+    instagram.get(location.instagramId, function(stringdata){
+      instagramData = JSON.parse(stringdata);
 
-    instagramData = instagramData.data.map(function(post){
-      return post.images.standard_resolution.url;
-    });
-
-    console.log('Array of Instagram Photo URLs: ' + instagramData);
-
-    //get numbeo data of average prices for certain items per city
-    var numbeoData;
-
-  //   // if (req.params.id == "728021537") locationName = "London";
-  //   // if (req.params.id == "523722982") locationName = "Mumbai";
-  //   // if (req.params.id == "35932492")  locationName = "Manhattan";
-  //   // if (req.params.id == "301343440") locationName = "Paris";
-  //   // if (req.params.id == "167346217") locationName = "San%20Francisco";
-  //   // if (req.params.id == "213193384") locationName = "Shanghai";
-
-
-    numbeo.get(location.uriName(), function(stringdata){
-
-      // first turn JSON into an object, then
-      // get the `prices` array inside it and assign it to var `numbeoData`
-      numbeoData = JSON.parse(stringdata).prices;
-      // turn numbeoData into an array of objects with 'name' and 'price' as key names
-      numbeoData = numbeoData.map(function(item) {
-        return {name: item.item_name, price: item.average_price};
+      instagramData = instagramData.data.map(function(post){
+        return post.images.standard_resolution.url;
       });
 
-      numbeoData.forEach(function(pricegroup) {
-        console.log('Item: ' + pricegroup.name + ' price:' + pricegroup.price);
-      });
+      console.log('Array of Instagram Photo URLs: ' + instagramData);
 
-      // Location.findById(req.params.id, function(location) {
+      //get numbeo data of average prices for certain items per city
+      var numbeoData;
+      numbeo.get(location.uriName(), function(stringdata){
+
+        // first turn JSON into an object, then
+        // get the `prices` array inside it and assign it to var `numbeoData`
+        numbeoData = JSON.parse(stringdata).prices;
+        // turn numbeoData into an array of objects with 'name' and 'price' as key names
+        numbeoData = numbeoData.map(function(item) {
+          return {name: item.item_name, price: item.average_price};
+        });
+
+        numbeoData.forEach(function(pricegroup) {
+          console.log('Item: ' + pricegroup.name + ' price:' + pricegroup.price);
+        });
+
         res.render('locations/show',
           {
             location:      location.name,
@@ -91,15 +80,11 @@ var show = function(req, res, next) {
             instagramData: instagramData,
             numbeoData:    numbeoData
         });
-      // });
-
+      });
     });
-  });
-            }, function(err) {
-              console.log(err);
-            })
-
-
+  }, function(err) {
+    console.log(err);
+  })
 };
 
 module.exports = {
