@@ -1,4 +1,4 @@
-# Project #3: Working as a Team with Express
+# Project #3: Travel App
 
 ###  Project Concept & Overview
 
