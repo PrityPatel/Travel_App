@@ -315,7 +315,7 @@ td{
   height: 100px;
 }
 
-#thumb_london, #thumb_mumbai, #thumb_new_york, #thumb_paris, #thumb_san_fransisco, #thumb_shanghai{
+#thumb_london, #thumb_mumbai, #thumb_new_york, #thumb_paris, #thumb_san_francisco, #thumb_shanghai{
   background-size: cover;
 }
 
@@ -335,7 +335,7 @@ td{
   background-image: url('http://www.hdfbcover.com/randomcovers/covers/Eiffel-tower-paris-france-fb-cover-photo.jpg');
 }
 
-#thumb_san_fransisco{
+#thumb_san_francisco{
   background-image: url('http://www.sleekcover.com/covers/san-francisco-facebook-cover.jpg');
 }
 

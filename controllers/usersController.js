@@ -2,6 +2,7 @@ var passport = require('passport');
 
 //require models
 var User = require('../models/User');
+var Location = require('../models/Location');
 
 // Get the new user form
 var newUser = function(req, res, next) {
@@ -26,14 +27,38 @@ var create = function(req, res) {
 //Show a User
 var show = function(req, res, next) {
   var id = req.user.id;
-  User.findById({_id: id}, function(error, user) {
-    if(error) res.json({message: 'Could not find User because: ' + error});
-        res.render('users/show', {user: user});
 
-        //code for travel_app api available
-        //res.json (user: user});
-      });
+  User.findById({_id: id})
+  .populate('location')
+  .exec(function(err, user) {
+    if (err) console.log(err);
+    res.render('users/show', {user: user});
+  });
 };
+  //   if (error) res.json({message: 'Could not find User because: ' + error});
+  //   console.log('user in UserFindById: ' + user);
+
+  //   res.render('users/show', {locations: req.user, user: user})
+
+    // var ids = user.map(function(user) { return user.locations_id; });
+    // Location.findById({_id: id}, function(err, location) {
+    //   console.log('location in Location Query: ' + location);
+    //   res.render('users/show', {user: user, location: location});
+    // });
+
+    // Location.findById({user: id}, function(err, location){
+    //   console.log(location);
+      // .populate('location')
+      // .exec(function(err, something){
+      //   if (err) console.log(err)
+      //   // console.log('User\'s location:'+ user.location);
+      //   console.log()
+      //   res.render('users/show', {user: user})
+      // })
+      // , function(error, locations) {
+      // console.log('locations in location find:' + locations);
+      // res.render('users/show', {user: user, location: locations})
+
 
 //Edit User Profile
 // var editUser = function(req, res, next){
