@@ -2,54 +2,64 @@
 
 ###  Project Concept
 
-The experience of this app is …"Experience living in another city…. for a day, for a year….fantasy, reality... now or later…. You decide!” (this is a working concept… title will be modified)
+An idea that could provide for a robust and dynamic site with full crud and with API usage.
+
+We utilize the Instagram API that has geotagging available and also the Numbeo API.
+
+The experience is …"Experience living in another city…. for a day, for a year….fantasy, reality... now or later…. You decide!” (this is a working concept… we can come up with that later)
 
 User enters their city, country of choice (or browse locations) and when they click to open up a location, they would have to log in, then:
-  - User is taken to a page where Instagram images from that city are displayed (Thanks Instagram API) and the cost of living is displaying (because of the Numbeo API). Users only have to be authenticated with Instagram (OAuth) IF they want to connect, comment, or like (which is an icebox user story feature).
+  - User is taken to a page where Instagram images from that city are displayed/updated in real time (because of the API) and the cost of living is displaying (because of the numbeo API). Users only have to be authenticated with Instagram (OAuth) IF they want to connect, comment, or like (which we can icebox).
 
-For this sprint we are limiting the amount of locations.
+For this project we can limit the amount of locations (or not depending on complexity), but at least we know it could scale going forward. Main thing is testing out if the API(s) would work.
 
-This idea allows for additional API's going forward… for instance: foursquare, yelp, twitter, facebook, etc.
+Using the Instagram images helps take away from having to come up with robust design as images are themselves vibrant, so then the design focus for the app becomes user flow and display options (from what i understand, the Instagram API also allows for thumbnail and zoomed images).
+
+This idea allows for additional API's going forward (if time permits)… like foursquare, yelp, twitter, facebook, etc.
+
+This also meets the requirements of the project:
+  - User model
+  - Location model
+  - Full CRUD on User model
+  - Possibly full CRUD on Location model if Users can save Locations (I think we should implement)
 
 **Below is a brief snippet for the Instagram stuff with some links…**
 
 * **Instagram API search for geotags**
  ![diagram] (http://i.imgur.com/0MoluqC.jpg)
 
+**Some NPM Documentation, Github repos, and Instagram Developer documentation:**
 
-## Technologies Used:
-  - Express web application server framework
-  - NodeJS
-  - Javascript
-  - MongoDB database management system
-  - Bootstrap CSS framework
-  - HTML for structure of webpage
+* **[NodeJS driver for the instagram API] (http://www.ibm.com/developerworks/xml/library/xinstagram1/index.html#retrievedetails)**
 
-## Installation Instructions (Getting Started):
+* **[NodeJS Driver for Instagram API] (https://github.com/totemstech/instagram-node)**
 
-  - **To View as a User:**
+* **[NPM: Simple Instagram-Node Driver] (https://www.npmjs.com/package/instagram-node)**
 
-    - Open the browser of your choice on your computer and navigate to:
-      - `https://pacific-sands-5189.herokuapp.com/` .
+* **[Instagram Limits] (https://instagram.com/developer/limits/)**
 
-    - Start by setting up an account. After which you will be taken to your profile page. From your profile page, you can access an index of all styles trending.
+* **[Instagram Endpoints] (https://instagram.com/developer/endpoints/?hl=en)**
 
-    - Logout when you're done.
+* **[Get Data Using Instagram API] (http://www.c-sharpcorner.com/UploadFile/raj1979/how-to-authenticate-and-get-data-using-instagram-API/)**
 
-  - **To Contribute or View Code and Source Files:**
+* **[Express.js Tutorial: Instagram Gallery Example App with Storify API] (http://webapplog.com/express-js-tutorial-instagram-gallery-example-app-with-storify-api/)**
 
-    - Create a copy or `Fork` of this repo `https://github.com/PrityPatel/travel_app`. Do so by clicking the `Fork`  button that is located above on the right corner of your github page. By forking this repo, you will now have a full working copy of all the same source files, issues, and commit history that currently exists in this repo.
+**Another link that is utilizing a streaming feed… this one is using twitter, though should help build a roadmap for Instagram (real-time is icebox, but just putting it here, so we can reference):**
 
-    - Next, to work on the code, you'll need to make a local copy of the fork. To make a local copy of the forked repo, you'll need to open up your computer Terminal and navigate to the directory where you would like to store the repo and work on it. Make sure you store it in a directory where you already have created a git directory via `git init`, otherwise, `git init` first.
+* **[Build A Real-Time Twitter Stream with Node and React.js] (https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js)**
 
-    - Once you've navigated (via the Terminal) to the directory where you would like to save the working files, go ahead and then type: `git clone https://github.com/PrityPatel/travel_app` and follow the instructions. You may be prompted for your Github login credentials.
+* **[Instagram Node Library] (https://github.com/mckelvey/instagram-node-lib)**
 
-    - You now have a local copy on your computer and a remote copy on Github. Open the local files in your favorite text editor, such as Sublime Text.
+* **[Instagram Realtime] (https://instagram.com/developer/realtime/?hl=en)**
 
-## Wireframes, ERDs, User Stories (MVP and Icebox):
+---
 
-  -  Attached via Trello along with App statement:
-    - `https://trello.com/b/PkFL0UrL/travel-app`
+### Landing Page Concept
+
+A basic landing page mocked up by Kevin:
+* **[Landing Page Mock-up, v1] (https://googledrive.com/host/0B6z5p82sidMKeU5HRWtldDVVSEU)**
+
+---
 
 ### Technical Requirements
 
