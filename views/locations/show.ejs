@@ -11,11 +11,37 @@ body{
 }
 </style>
 
+<script>
+$( document ).ready(function() {
+if (window.location.pathname === '/locations/213193384'){
+$('.currency').append('¥');
+}else if (window.location.pathname === '/locations/728021537'){
+  $('.currency').append('£');
+}else if (window.location.pathname === '/locations/523722982'){
+  $('.currency').append('₹');
+}else if (window.location.pathname === '/locations/35932492'
+  || window.location.pathname === '/locations/167346217'){
+  $('.currency').append('$');
+}else if (window.location.pathname === '/locations/301343440'){
+  $('.currency').append('€');
+}
+});
+</script>
+
+
 </head>
 <body>
 <% include ../partials/nav %>
 
 <p class="siteName_city"><%= location %></p>
+
+
+<!--   <form action="show_submit" method="post" accept-charset="utf-8">
+    <input value="<% location.id %>">
+    <input  name="<% location.name %>">
+
+  <button id="my_list_button" type="button">Add this City to my List</button>
+</form> -->
 
 <button id="my_list_button" type="button">Add this City to my List</button>
 
@@ -31,11 +57,28 @@ body{
 </div>
 
 <div id="costs">
-  <p id="city_name">City Names</p>
+  <p id="city_name">Cost of Living in <%= location %></p>
 
-  <% numbeoData.forEach(function(prices){ %>
-    <caption id="city_expense">Living Expenses for <%= prices.name + prices.price %></caption>
-  <% }); %>
+      <table>
+
+      <thead>
+        <tr>
+
+        </tr>
+      </thead>
+      <tbody>
+        <% numbeoData.forEach(function(item) { %>
+          <tr>
+          <td class="item">- <%= item.name %></td>
+          <div class="currency_n_price">
+          <td class="currency"></td>
+          <td class="price"><%= item.price.toFixed(2) %></td>
+          </div>
+        </tr>
+
+        <% }); %>
+      </tbody>
+    </table>
 </div>
 
 </body>
