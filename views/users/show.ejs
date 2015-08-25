@@ -15,11 +15,11 @@
 
   <% if (user.location) { %>
     <% user.location.forEach(function(location){ %>
-      <div id="thumbs_small">
-        <a href="/locations/<%= location.id %>" >
-          <p><%= location.name %></p>
-        </a>
-      </div>
+    <div class="thumbs_small">
+    <a href="/locations/<%= location.id %>" >
+      <img src="<%= location.image_uri %> ">
+    </a>
+    </div>
     <% }) %>
   <% } %>
 </body>
