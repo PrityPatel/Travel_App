@@ -66,7 +66,6 @@ var createLocations = function(done) {
       name: "New York",
       instagramId: 35932492,
       currencyId: '$'
-      // user: jim._id
     }),
     Location.create({
       name: "Paris",
@@ -77,7 +76,6 @@ var createLocations = function(done) {
       name: "San Francisco",
       instagramId: 167346217,
       currencyId: '$'
-      // user: phil._id
     }),
     Location.create({
       name: "Shanghai",

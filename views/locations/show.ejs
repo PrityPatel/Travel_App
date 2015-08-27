@@ -71,8 +71,8 @@ body{
           <tr>
           <td class="item">- <%= item.name %></td>
           <div class="currency_n_price">
-          <td class="currency"></td>
-          <td class="price"><%= location.currencyId + item.price.toFixed(2) %></td>
+          <td class="currency"><%= location.currencyId %></td>
+          <td class="price"><%= item.price.toFixed(2) %></td>
           </div>
         </tr>
 
