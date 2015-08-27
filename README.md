@@ -73,7 +73,7 @@ User enters their location of choice (or browse locations) and when they click t
 
    - Tiffany Chang: Back-End
    - Kevin Huelsmann: Front-End
-   - Prity Patel: Back-End, Project Concept Development, Team Lead
+   - Prity Patel: Team Lead, Project Concept, Back-End
    - Kimberly Yi: Front-End
 
 
