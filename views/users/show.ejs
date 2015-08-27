@@ -10,8 +10,12 @@
   <% include ../partials/nav.ejs %>
   <h1 class="text-center user_name"><%= user.name %>'s Profile</h1>
 
+
   <!-- This will populate user's saved cities -->
-  <h3 id="my_cities" class="text-center">My Cities</h3>
+  <!-- <h3 id="my_cities" class="text-center">My Cities</h3> -->
+  <br>
+  <h2>We are currently working on the location save feature for this page. Stay tuned.</h2>
+    <h2>In the meantime, browse all of our current locations by clicking the 'Browse Cities' link above. </h2>
 
   <% if (user.location) { %>
     <% user.location.forEach(function(location){ %>
