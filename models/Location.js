@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 var LocationSchema = new mongoose.Schema({
   name:        String,
   instagramId: String,
+  currencyId:   String,
   user: {type: mongoose.Schema.Types.ObjectId, ref: 'User'}
 });
 
