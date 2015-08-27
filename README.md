@@ -71,10 +71,10 @@ User enters their location of choice (or browse locations) and when they click t
 ## Team
   - This Project was completed by the following 4 students in General Assembly's Web Development Immersive Program, June 2015:
 
-   - Tiffany Chang: Backend
-   - Kevin Huelsmann: Frontend
-   - Prity Patel: Backend, Project Concept Development, Team Lead
-   - Kimberly Yi: Frontend
+   - Tiffany Chang: Back-End
+   - Kevin Huelsmann: Front-End
+   - Prity Patel: Back-End, Project Concept Development, Team Lead
+   - Kimberly Yi: Front-End
 
 
 ---
