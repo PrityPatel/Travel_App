@@ -1,7 +1,11 @@
 var mongoose = require('mongoose'),
     async    = require('async');
 
-mongoose.connect('mongodb://localhost:27017/travel_app');
+var mongoURI = 'mongodb://localhost/travel_app';
+if (process.env.NODE_ENV === 'production') {
+    mongoURI= process.env.MONGOLAB_URI;
+}
+mongoose.connect(mongoURI);
 
 console.log('Connected to MongoDB!', "\n");
 
