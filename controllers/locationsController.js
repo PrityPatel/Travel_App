@@ -76,7 +76,7 @@ var show = function(req, res, next) {
 
         res.render('locations/show',
           {
-            location:      location.name,
+            location:      location,
             user:          req.user,
             instagramData: instagramData,
             numbeoData:    numbeoData

@@ -33,7 +33,7 @@ body{
 <body>
 <% include ../partials/nav %>
 
-<p class="siteName_city"><%= location %></p>
+<p class="siteName_city"><%= location.name %></p>
 
 
 <!--   <form action="show_submit" method="post" accept-charset="utf-8">
@@ -57,7 +57,7 @@ body{
 </div>
 
 <div id="costs">
-  <p id="city_name">Cost of Living in <%= location %></p>
+  <p id="city_name">Cost of Living in <%= location.name %></p>
 
       <table>
 
